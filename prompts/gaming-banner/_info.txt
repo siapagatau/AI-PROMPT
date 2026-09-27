@@ -1,0 +1,3 @@
+emoji = 🎮
+label = Gaming Banner
+deskripsi = Banner & thumbnail gaming — hero MOBA, gacha/anime showcase, poster esports, channel art VTuber, cyberpunk, hingga dark battle.

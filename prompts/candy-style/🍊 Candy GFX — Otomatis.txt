@@ -1,0 +1,37 @@
+nama = text | cth: Iochi Mari, Username, dll (opsional)
+deskripsi = text | cth: Fox girl, streamer, dsb (opsional)
+ukuran = select | 1:1 square (1080×1080px) — IG post, profile picture ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 16:9 landscape (1920×1080px) — YouTube thumbnail, banner ; 3:1 wide (3000×1000px) — Twitter / Discord banner ; custom ratio — adjust canvas accordingly
+---
+Create an anime GFX graphic in "candy aesthetic" style with the following specifications:
+
+[TEXT & IDENTITY]
+• Main text / name: Display "{{nama|no fixed name provided — the AI may add a fitting name/title or leave it as a purely visual mark}}" prominently in large bubble font
+• Subject description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[CANDY COLOR PALETTE]
+• Analyze the overall composition and automatically select the most harmonious warm pastel palette
+• Use soft gradients and gentle color transitions — avoid harsh contrast
+• Dominant tones should feel warm, kawaii, and cozy
+• Text elements should share the same palette with thick white stroke outlines
+
+[CANDY DESIGN ELEMENTS]
+• Typography     : Bubble font / rounded bold text with thick white stroke outline
+• Borders/frames : Dashed-line rectangular frames in the dominant color
+• Background     : Layered warm-toned panels or torn-paper texture effect
+• UI accents     : Small decorative icons (camera, search, profile, star) scattered naturally
+• Text tags      : Floating short text snippets in the accent color as visual details
+• Decorations    : Flowers, stars, ribbon bows, dot patterns — spread across foreground and background
+
+[LAYOUT COMPOSITION]
+• Main subject is the dominant focal element (60–70% of canvas)
+• Include 1–2 smaller inset panels showing close-up or alternate angle detail shots
+• Dashed white lines connecting elements to create visual flow and rhythm
+
+[MOOD & AESTHETIC]
+• Overall vibe   : Warm, kawaii, playful, cozy
+• Lighting       : Soft ambient warm light — no harsh shadows
+• Finish         : Polished, print-ready, social-media-optimized
+
+[OUTPUT]
+Final result must look like a professional anime GFX card — charming, cohesive, and immediately recognizable as "candy aesthetic" style.

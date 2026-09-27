@@ -1,0 +1,3 @@
+emoji = ✨
+label = HD Color Boost
+deskripsi = Bikin foto terasa lebih ‘HD’ murni lewat warna & tone — clarity, kontras, saturasi, white balance — tanpa upscale atau nambah detail palsu.

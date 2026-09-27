@@ -1,0 +1,49 @@
+subjek = textarea | Deskripsi foto utama / subjek
+lokasi = text | Lokasi / latar (opsional)
+sticker = text | Teks sticker / headline (opsional)
+chat = text | Teks chat bubble / reaksi (opsional)
+musik = text | Info lagu untuk widget musik (opsional)
+watermark = text | Watermark / username kecil (opsional)
+ukuran = select | 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story, Pinterest pin ; 1:1 square (1080×1080px) — feed post Instagram ; 3:4 portrait (1080×1440px) — Pinterest-style pin ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+elemen = multiselect | Foto Polaroid Inset — one or two small polaroid/instant-photo style inset images with thin white borders, a slight rotation, and a soft realistic drop shadow, stacked near a corner or edge of the main photo ; Widget Musik — a music now-playing widget UI (Spotify or Apple Music style) showing a song title, artist name, and a playback progress bar, placed as a floating rounded card ; Chat Bubble — a rounded chat-bubble or DM-style overlay UI displaying a short sweet phrase or reaction text, styled like a real messaging-app bubble ; Notifikasi / Reminder — a soft notification or reminder card UI (like a phone lock-screen notification or a Do-Not-Disturb toggle) with a short caring, personal message ; Kartu Receipt — a small vertical "receipt" style card (Receiptify-style) listing a couple of song titles like a printed store receipt, complete with a torn bottom edge ; Kartu Palet Warna — a small color-swatch reference card showing two or three named color chips with hex-style labels, tucked near an edge of the composition ; Kartu Lokasi / Map — a small map/location card UI showing a pin marker, place name, rating stars, and short address or hours details, floating near the bottom of the frame ; Photo Booth Strip — a vertical photo-booth strip of 3–4 stacked candid frames along one side of the composition, styled like a real photo-booth printout ; Stiker Maskot Lucu — one or two small cute cartoon mascot or plush-toy stickers (a small animal or chibi character) tucked into a corner of the composition for extra charm ; Sparkle / Glitter Overlay — a fine scattering of sparkle, glitter-dot, or star-particle texture drifting softly across parts of the background ; Elemen Bunga / Alam — one or two oversized, softly blurred flowers or botanical elements layered behind or beside the subject for extra depth and romance ; Frame Besar + Label Mood — a large sticky-note or oversized polaroid-style frame element with a small handwritten-style mood-word tag attached to it (e.g. "soulmates", "cutie")
+---
+Using the provided reference collage image as the primary style guide, recreate its layout and widget arrangement around the uploaded main photo, in the style of a colorful Y2K-inspired sticker-pop collage styled like an oversized social-app post mockup:
+
+[MAIN SUBJECT & SCENE]
+• Main subject / photo content: {{subjek|not specified — the subject in a candid outdoor pose holding or wearing a colorful accessory, framed inside an oversized social-media-post-style UI frame}}
+• Setting / location: {{lokasi|not provided by the user, the AI may skip this detail entirely}}
+Keep the subject's face, identity, and proportions from the uploaded main photo completely unchanged — only the collage layer should be newly composed.
+
+[TEXT & LABELS]
+• Sticker / headline text to display somewhere in the collage: "{{sticker|not provided by the user, the AI may skip this detail entirely}}"
+• Chat-bubble / reaction text to include: "{{chat|not provided by the user, the AI may skip this detail entirely}}"
+• Song info to display in the music widget: "{{musik|not provided by the user, the AI may skip this detail entirely}}"
+• Small watermark/username signature tucked into a corner: "{{watermark|not provided by the user, the AI may skip this detail entirely}}"
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[REFERENCE ADAPTATION]
+• Extract the exact collage layout logic from the reference image: where the photo insets sit, where UI widgets float, how much of the frame is decorative versus open space
+• Preserve the reference's layering style, shadow softness, and rotation angles of its elements
+• Replace the reference's own photos, text, and specific widget content with the new subject and text specified above — do not reuse the reference's actual people, wording, or song titles unless they match what's specified here
+
+[COLLAGE ELEMENTS]
+Recreate a similar mix of floating elements as seen in the reference, prioritizing this requested set if provided:
+• {{elemen|Frame Besar + Label Mood — a large sticky-note or oversized polaroid-style frame element with a small handwritten-style mood-word tag attached to it (e.g. "soulmates", "cutie"), Elemen Bunga / Alam — one or two oversized, softly blurred flowers or botanical elements layered behind or beside the subject for extra depth and romance, Chat Bubble — a rounded chat-bubble or DM-style overlay UI displaying a short sweet phrase or reaction text, styled like a real messaging-app bubble}}
+• If the reference includes additional widget types not listed above, feel free to keep them too, adapted to match the new subject and color palette
+
+[COLOR PALETTE]
+• Primary palette derived from the reference image's tone and lighting style
+• However, override the reference's actual hues toward a palette built around {{warna|bright multicolor pastel tones — yellow, sky blue, pink and lilac — kept playful and cheerfully saturated}} — chosen deliberately by the user, then softly tinted so it still fits a colorful Y2K-inspired sticker-pop collage styled like an oversized social-app post mockup
+• This color preference was explicitly requested by the user and takes priority over the style's default palette — build every widget, sticker, and accent tint around it
+
+[COMPOSITION]
+• Mirror the reference's layering depth and asymmetric placement logic
+• Keep the same balance of open space versus detail seen in the reference
+
+[MOOD & AESTHETIC]
+• Vibe: bubbly, playful, expressive, unapologetically girly-maximalist, consistent with the reference's overall feel
+• Finish: polished, personal, aesthetic-account quality
+
+[OUTPUT]
+The final result should feel like a natural sibling collage to the reference — same design family and layout DNA, new subject and content.

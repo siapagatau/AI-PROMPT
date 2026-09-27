@@ -1,0 +1,22 @@
+watermark = text | Watermark kamera (nama device / username), cth: POCO X3 NFC · impostorgelap© (opsional)
+ukuran = select | 16:9 landscape video frame (1920×1080px) — gaya frame video vlog ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:3 classic photo (1440×1080px) — gaya foto kamera klasik ; 1:1 square (1080×1080px) — feed post ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo as the primary color-grading and style guide, apply a matching Google Camera (GCam) daytime HDR+ computational photography look to the main uploaded photo:
+
+[REFERENCE ADAPTATION]
+• Extract the reference's exact color grading, dynamic range balance, sharpness/clarity level, and overall processing signature
+• Match its handling of sky color, foliage saturation, shadow detail, and highlight rolloff as closely as possible
+• Apply that extracted look onto the main photo without altering its actual subject, composition, or content
+
+[COLOR GRADING & PROCESSING]
+Apply an authentic Google Camera HDR+ processing style: a very wide dynamic range that balances a bright sky against shadowed foreground detail without blown-out highlights or crushed shadows, a deeply saturated yet natural-looking azure blue sky with crisp, well-defined white clouds, lush richly saturated greens in foliage, grass, and trees, strong micro-contrast and fine-detail clarity (visible texture in leaves, gravel, brick, and fabric), a slightly cool-neutral white balance, and sharp edge definition with no visible over-sharpening halos — that unmistakable punchy "Pixel-style" HDR+ signature look.
+• Where the reference and this base description differ, prioritize matching the reference image's actual look
+
+[SHOT PERSPECTIVE]
+Frame this with a standard wide field of view and no exaggerated fisheye distortion, a steady static composition, and deep focus maintained sharply across the entire scene from foreground to background, exactly like a handheld action-cam landscape or street shot.
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+[WATERMARK]
+• Watermark overlay (optional, small and subtle, near the bottom of the frame, exactly like an authentic vlogging-camera-app overlay, clean white sans-serif with a soft drop shadow, never covering the main subject): {{watermark|no watermark needed — keep the frame completely clean with no on-screen text}}
+
+[OUTPUT]
+The final result should look like it was captured in the same shooting session as the reference — same camera, same processing pipeline, same authentic GCam signature look.

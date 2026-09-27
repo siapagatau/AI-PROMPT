@@ -1,0 +1,47 @@
+judul = text | Judul / headline
+deskripsi = textarea | Deskripsi / teks pendukung
+info_tambahan = text | Sumber / tanggal / kategori (opsional)
+brand = text | Nama akun / brand / media (opsional)
+kredit_foto = text | Kredit foto / sumber gambar (opsional)
+statistik = text | Statistik / interaksi, cth: ❤️ 6.391 (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post Instagram/Facebook ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story ; 16:9 landscape (1920×1080px) — thumbnail, banner web ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a professional content-card design styled as a religious / travel informational announcement card, similar to an organization's social media infographic post, with the following specifications:
+
+[TEXT & CONTENT]
+• Headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — present as a shorter secondary text line beneath the headline
+• Additional info (source, date, or category): "{{info_tambahan|(none)}}" — present in a small, clearly readable secondary text block
+• Account / brand / media name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place as a small logo lockup or badge without competing with the headline
+• Footer details: photo credit / image source "{{kredit_foto|(none)}}", an engagement indicator "{{statistik|(none)}}" — arrange these small and unobtrusive at the bottom edge or corners, clearly legible but visually secondary to the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[COLOR PALETTE]
+• Base palette: a palette built around {{warna|a deep, rich background palette (navy, deep teal, or near-black) accented with warm gold or cream linework and ornamental detailing, with all headline text rendered in crisp white for maximum contrast}} — chosen deliberately by the user, then shaded and tinted so it still fits a religious / travel informational announcement card, similar to an organization's social media infographic post
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+• Keep colors harmonious above all — text readability against the photo/background is the top priority
+• Prefer soft gradients or layered tonal panels over flat, single-tone blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a full-bleed thematic photographic background blended with an elegant gold ornamental pattern or decorative border along one edge, a smaller inset circular or rounded photo as a secondary visual accent, a bold oversized white headline placed directly over the photo with a subtle dark gradient scrim behind it for legibility, a small brand/organization logo watermark tucked in a corner, and a small account handle or credit line at the bottom edge
+• Render any photographic element with realistic, high-quality material and lighting — correct reflections, textures, and proportions
+• Add subtle depth using soft shadow, gentle gradient scrim, or layered panels so text always stays legible
+
+[TYPOGRAPHY]
+• Headline: bold, large display type — the unmistakable focal point after any photographic subject
+• Supporting text: clean, highly legible sans-serif matched to the style
+• Maintain strong contrast between every text layer and its background
+
+[COMPOSITION]
+• Let the thematic photo and ornamental gold pattern fill the full canvas, with a soft dark gradient scrim rising from the bottom for text legibility. Stack the bold white headline directly over that scrim in the lower half, with a smaller inset accent photo placed in the upper portion. Keep the logo watermark small and unobtrusive in a corner, and the credit/handle line small at the very bottom.
+• Establish a clear visual hierarchy: photo/visual → headline → supporting text → footer/brand
+• Balance negative space against detail-rich focal areas — avoid overcrowding
+
+[MOOD & AESTHETIC]
+• Overall vibe: trustworthy, warm, reverent, informative — organizational-announcement energy
+• Lighting: soft and directional where photographic, matching the style's atmosphere — avoid harsh flat lighting
+• Finish: polished, print-ready, and social-media-optimized
+
+[OUTPUT]
+The final result must look like a professional, publish-ready content card — cohesive, on-style, and instantly communicative of the headline's message.

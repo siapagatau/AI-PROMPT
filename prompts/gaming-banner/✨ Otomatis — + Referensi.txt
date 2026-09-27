@@ -1,0 +1,43 @@
+judul = text | Nama karakter / judul utama
+deskripsi = textarea | Deskripsi pose / tema visual
+role_badge = text | Role / badge kecil, cth: ASSASSIN (opsional)
+info_tambahan = text | Tagline / tanggal / prizepool (opsional)
+kredit = text | Kredit / sponsor / nama tim (opsional)
+ukuran = select | wide banner (1920×560px) — banner channel art, cover event ; 16:9 landscape (1920×1080px) — thumbnail, wallpaper, banner web ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 1:1 square (1080×1080px) — feed post, ikon profil ; A4 portrait print-ready (2480×3508px, 300dpi) — poster turnamen cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference image as the primary style guide, create a professional gaming banner/thumbnail in gaming banner/thumbnail style chosen automatically based on the character, title, and description provided:
+
+[TEXT & CONTENT]
+• Main character/title wordmark: "{{judul|no fixed name provided — generate a fitting short name/title based on the description}}" — this exact text must be the single dominant, unmistakable focal text element
+• Character pose / visual theme: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Small role/class badge text: "{{role_badge|not provided by the user, the AI may skip this detail entirely}}" — render in a compact tag/chip shape tucked in a corner, clearly secondary to the main wordmark
+• Additional info (tagline / date / prizepool): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block appropriate to the style
+• Credit / sponsor / team text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a corner or footer, must not compete with the main wordmark
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[REFERENCE ADAPTATION]
+• Extract the layout structure, wordmark treatment, color grading, and decorative motif language directly from the reference image
+• Preserve the reference's overall composition logic — where the character sits, where the wordmark cuts across the frame, how tags/info panels are arranged
+• Adapt that extracted style to the new text content and character description above; do not reuse the reference's own wording or character likeness
+• If the reference features a specific pose, camera angle, or framing convention, keep a similarly styled approach unless the new content clearly calls for something else
+
+[COLOR PALETTE]
+• Primary palette derived from the reference image's lighting and color-grading approach
+• However, override the reference's actual hues toward a palette built around {{warna|a harmonious high-impact palette chosen automatically based on the description provided}} — chosen deliberately by the user, then shaded and tinted so it still fits a gaming banner/thumbnail style chosen automatically based on the character, title, and description provided
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+
+[VISUAL MOTIFS]
+• Also consider incorporating: supporting graphic elements chosen automatically to reflect the character's theme and energy
+• Keep decorative details (speed-lines, HUD elements, particles, frames) stylistically consistent with the reference's level of detail and placement logic
+
+[TYPOGRAPHY & COMPOSITION]
+• Mirror the reference's typographic weight, outline/glow treatment, and text placement logic
+• Maintain the same balance of character-to-text space and the same general silhouette proportions seen in the reference
+
+[MOOD & AESTHETIC]
+• Vibe: tuned automatically to match the tone of the description, consistent with the reference's overall feel
+• Finish: polished, high-resolution, game-studio key-art quality
+
+[OUTPUT]
+The final result should feel like a natural sibling design to the reference banner — same design family, new character/content, professional and cohesive.

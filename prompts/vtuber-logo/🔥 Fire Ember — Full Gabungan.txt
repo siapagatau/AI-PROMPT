@@ -1,0 +1,40 @@
+nama = text | Judul / nama VTuber, cth: Cyupi, Zavira, Ryujin
+deskripsi = textarea | Deskripsi karakter / tema
+tagline = text | Tagline / angka tambahan (opsional)
+kredit = text | Kredit / nama desainer (opsional)
+ukuran = select | square logo lockup (1500×1500px), transparent PNG background — profile / watermark utama ; wide horizontal lockup (2000×800px), transparent PNG background — untuk banner/overlay stream ; compact icon-friendly lockup (500×500px), transparent PNG background — favicon / emote kecil ; tall vertical lockup (1080×1920px), transparent PNG background — story / poster digital ; custom size — adjust canvas accordingly, transparent PNG background
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference logo image, fully reconstruct and elevate it into a new VTuber / streamer name-logo:
+
+[TEXT & IDENTITY]
+• Main wordmark text: "{{nama|no fixed name provided — generate a short, fitting placeholder name styled the same way}}" — this exact text must be the single dominant, unmistakable focal element of the logo
+• Character / theme description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}} — let this guide the mascot details, mood, and any supporting motifs
+• Small secondary text/number: "{{tagline|not provided by the user, the AI may skip this detail entirely}}" — render in a compact pill/tag shape tucked near the bottom of the wordmark, clearly secondary to the main text
+• Credit text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a bottom corner, must not compete with the main wordmark
+• Canvas size / format: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference's letterform construction, outline/stroke style, shading technique, and decorative motif placement
+• Identify its dominant color palette and overall silhouette proportions
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original name/text with the new wordmark specified above
+• Keep the same construction logic and proportions, simply re-lettered with the new name
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — cleaner vector lines, richer shading, more polished finish
+• Recolor the composition toward a palette built around {{warna|deep red through orange to warm gold, with a dark charcoal outline for contrast}} — chosen deliberately by the user, then shaded and tinted to still fit a fire / ember logo, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+• Motifs to preserve or introduce: small flame wisps and ember sparks drifting near the wordmark, a subtle heat-shimmer glow behind the letters, and optional smoke curls at the base
+
+[COMPOSITION & TYPOGRAPHY]
+• Preserve the reference's visual rhythm — spacing, decoration density, and focal balance
+• Ensure the new wordmark remains the single dominant focal element, fully legible
+
+[MOOD & AESTHETIC]
+• Vibe: energetic, bold, fierce, and warm
+• Background: transparent, professional sticker/overlay finish
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new name, higher visual polish.

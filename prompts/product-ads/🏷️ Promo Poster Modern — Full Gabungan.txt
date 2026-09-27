@@ -1,0 +1,44 @@
+judul = text | Judul / nama produk, cth: Dadar Gulung Kelapa Gula Merah
+deskripsi = textarea | Deskripsi produk
+harga_promo = text | Harga / diskon / tagline (opsional)
+brand = text | Nama brand / toko (opsional)
+telp = text | Nomor telp / WhatsApp (opsional)
+sosmed = text | Media sosial, cth: @dapurummi.snack (opsional)
+info_perusahaan = text | Alamat / website (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post, toko online ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital ; 16:9 landscape (1920×1080px) — banner web, digital signage ; A4 portrait print-ready (2480×3508px, 300dpi) — flyer cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference image, fully reconstruct and elevate it into a new professional product advertisement styled as a modern promotional product poster with a confident price/discount callout, styled like a contemporary DTC brand ad rather than a generic marketplace flyer:
+
+[TEXT & CONTENT]
+• Product name / headline: display "{{judul|no fixed product name provided — generate a fitting short product name based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Product description / supporting copy: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — reflect this in the visual details (ingredients, texture, form) and in a short supporting text line
+• Additional info (price, discount, or tagline): "{{harga_promo|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable badge or secondary text block
+• Brand / store name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place tastefully (e.g. small logo lockup area or footer credit) without competing with the headline
+• Contact / footer details: company info / address / website "{{info_perusahaan|(none)}}", phone / WhatsApp number "{{telp|(none)}}", social media handle "{{sosmed|(none)}}" — arrange these together in one small, neat footer line or corner block, clearly legible but visually secondary to the headline and product
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference image's layout grid, focal point placement, lighting setup, and text hierarchy
+• Identify its dominant color palette and typography style
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original product, text, and branding with the new content specified above
+• Keep the same layout logic and proportions, simply re-populated with the new product and information
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — sharper detail, better lighting, more realistic materials, a more premium finish
+• Recolor the composition toward a palette built around {{warna|one bold saturated brand color as a full-bleed background or color-blocked panel, paired with crisp white/off-white negative space and a single sharp accent color reserved only for the CTA button and discount badge — no busy multi-color gradients or clashing tones}} — chosen deliberately by the user, then shaded and tinted so it still fits a modern promotional product poster with a confident price/discount callout, styled like a contemporary DTC brand ad rather than a generic marketplace flyer, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+• Motifs to preserve or introduce: a clean hero product photo shot at a slight dynamic angle (or a couple of variants arranged with intention), one minimal geometric badge — a simple circle or rounded rectangle, not a cartoonish starburst — for the price/discount, a confident sans-serif CTA button, a small refined logo mark, and understated footer contact info; no clip-art leaves, no decorative clutter, no filler placeholder copy
+
+[COMPOSITION & TYPOGRAPHY]
+• Preserve the reference's visual rhythm — spacing, alignment, and focal balance
+• Ensure the new product remains the single dominant focal element, with the headline as clear secondary focus
+
+[MOOD & AESTHETIC]
+• Vibe: confident, premium-but-accessible, modern e-commerce, trustworthy
+• Finish: premium, polished, print-ready, social-media/e-commerce-optimized
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new product, higher visual polish.

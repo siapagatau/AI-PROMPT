@@ -1,0 +1,38 @@
+kata_utama = text | Kata / frasa utama, cth: Ice Cream, Sky, Learn to Rest
+caption = textarea | Deskripsi / caption pendukung
+label_kecil = text | Catatan / label kecil di sekitar foto (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post Instagram/Facebook ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided photo as the base image, add a cute hand-drawn doodle typography edit, similar to a playful kawaii Instagram story/reels design directly on top of it:
+
+[TEXT & CONTENT]
+• Main word/phrase: render "{{kata_utama|no fixed main word provided — generate a short, fitting main word based on the description below}}" as the single most dominant typographic element, in bold bubble/display lettering
+• Supporting caption / description text: "{{caption|not provided by the user, the AI may skip this detail entirely}}" — present as a smaller secondary text element (handwritten-style caption, speech bubble, or small caption line depending on the style)
+• Small notes / labels: "{{label_kecil|not provided by the user, the AI may skip this detail entirely}}" — scatter these as tiny handwritten-style labels or arrow-pointer annotations near relevant details in the photo, kept small and clearly secondary
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[BASE PHOTO HANDLING]
+• Keep the original photo fully intact, unaltered, and clearly visible as the background of the entire composition
+• All typography and doodle elements must be added on top as an overlay layer — never replace, crop out, or heavily obscure the original photo content
+
+[COLOR PALETTE]
+• a palette built around {{warna|the natural colors of the photo itself, accented purely with crisp white doodle linework, plus one or two bright candy-color highlights (yellow, pink, or orange) used sparingly for small text labels}} — chosen deliberately by the user, then blended so it still fits a cute hand-drawn doodle typography edit, similar to a playful kawaii Instagram story/reels design
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build the lettering, outline, and accent colors around it
+• Keep every added element cohesive with (or intentionally complementary to) the photo's natural coloring
+
+[TYPOGRAPHY & DOODLE MOTIFS]
+• Incorporate: thick white hand-drawn scribble/outline shapes framing the edges of the photo, small dashed white outline circles or blobs isolating focal subjects, tiny kawaii cartoon faces (simple dot eyes, small mouth, blush cheeks) doodled directly onto round food or objects in the photo, small hand-drawn arrows pointing at details with tiny handwritten labels, and the main word rendered as chunky bold bubble lettering with a thick white or colored outline sitting directly over the photo
+• Keep the main word fully legible at a glance — never let doodles or secondary text obscure it
+• Balance dense decorative areas with open negative space so the underlying photo still reads clearly
+
+[COMPOSITION]
+• Keep the photo as the full background, then wrap thick white doodle scribbles and dashed outline shapes loosely around its edges and key focal points. Place the bold bubble-lettered main word confidently in the upper or lower third, with small handwritten labels and arrows scattered near relevant details in the photo, never overlapping the main word.
+• Establish a clear visual hierarchy: photo → main word → supporting caption → small notes/labels
+
+[MOOD & AESTHETIC]
+• Overall vibe: playful, cute, candid, casual social-media-diary energy
+• Finish: looks like a polished manual typography edit (the kind made in VSCO, PicsArt, or Phonto), not a heavy AI-generated illustration — crisp vector-style linework, clean lettering, natural photo integration
+
+[OUTPUT]
+The final result must look like an aesthetic, publish-ready Instagram story/post typography edit — cohesive, charming, and true to the cute hand-drawn doodle typography edit, similar to a playful kawaii Instagram story/reels design.

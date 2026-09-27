@@ -1,0 +1,42 @@
+judul = text | Nama karakter / judul utama
+deskripsi = textarea | Deskripsi pose / tema visual
+role_badge = text | Role / badge kecil, cth: ASSASSIN (opsional)
+info_tambahan = text | Tagline / tanggal / prizepool (opsional)
+kredit = text | Kredit / sponsor / nama tim (opsional)
+ukuran = select | wide banner (1920×560px) — banner channel art, cover event ; 16:9 landscape (1920×1080px) — thumbnail, wallpaper, banner web ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 1:1 square (1080×1080px) — feed post, ikon profil ; A4 portrait print-ready (2480×3508px, 300dpi) — poster turnamen cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference image, fully reconstruct and elevate it into a new professional gaming banner/thumbnail in VTuber / streamer channel-art banner, similar to a YouTube/Twitch channel header:
+
+[TEXT & CONTENT]
+• Main character/title wordmark: "{{judul|no fixed name provided — generate a fitting short name/title based on the description}}" — this exact text must be the single dominant, unmistakable focal text element
+• Character pose / visual theme: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Small role/class badge text: "{{role_badge|not provided by the user, the AI may skip this detail entirely}}" — render in a compact tag/chip shape tucked in a corner, clearly secondary to the main wordmark
+• Additional info (tagline / date / prizepool): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block appropriate to the style
+• Credit / sponsor / team text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a corner or footer, must not compete with the main wordmark
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference's layout grid, character posing/framing convention, wordmark construction, and decorative motif placement
+• Identify its dominant color palette and overall silhouette proportions
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original character, name, and text with the new content specified above
+• Keep the same construction logic and proportions, simply re-populated with the new character and wording
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — sharper rendering, richer lighting, more polished finish
+• Recolor the composition toward a palette built around {{warna|a vibrant two-tone duo (such as coral-and-navy, cyan-and-magenta, or icy-blue-and-white) built around the character's signature colors}} — chosen deliberately by the user, then shaded and tinted so it still fits a VTuber / streamer channel-art banner, similar to a YouTube/Twitch channel header, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+• Motifs to preserve or introduce: a dotted halftone or polka-pattern backdrop panel behind the wordmark, thin geometric line accents (circles, chevrons, cross marks) scattered around the composition, a small rounded platform-icon badge, and subtle sparkle accents near the character
+
+[COMPOSITION & TYPOGRAPHY]
+• Preserve the reference's visual rhythm — spacing, decoration density, and focal balance
+• Ensure the new wordmark remains the single dominant focal element, fully legible
+
+[MOOD & AESTHETIC]
+• Vibe: energetic, friendly, parasocial charm, bright pop-idol energy
+• Finish: premium, polished, game-studio key-art quality
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new character/content, higher visual polish.

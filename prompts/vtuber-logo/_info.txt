@@ -1,0 +1,3 @@
+emoji = 🎀
+label = VTuber Logo
+deskripsi = Logo nama VTuber / streamer bergaya bubble-text — candy, ocean, ice, nature, galaxy, hingga mascot chibi.

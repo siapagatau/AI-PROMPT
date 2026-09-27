@@ -1,0 +1,3 @@
+emoji = 🖼️
+label = Kolase Mix
+deskripsi = Kolase foto estetik ala Pinterest/Instagram — polaroid, widget musik, chat bubble, notifikasi, receipt, hingga photo booth.

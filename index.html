@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Miku Prompt — Koleksi &amp; Builder Prompt</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗂️</text></svg>">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+  --bg1:#4fd6ff; --bg2:#2f95ff; --bg3:#1660f2;
+  --panel:#ffffff;
+  --surface:#f2f6ff;
+  --surface2:#e8eeff;
+  --border:#e3e9fb;
+  --ink:#151a30;
+  --muted:#7b83a3;
+  --accent:#2f95ff;
+  --accent2:#4fd6ff;
+  --purple:#8b5cf6;
+  --purple2:#7c3aed;
+  --good:#18b673;
+  --font-head:'Plus Jakarta Sans',sans-serif;
+  --font-body:'Inter',sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+body{
+  min-height:100vh;color:var(--ink);font-family:var(--font-body);line-height:1.5;
+  background:
+    radial-gradient(900px 520px at 8% -8%, rgba(255,255,255,.25) 0%, transparent 55%),
+    linear-gradient(160deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg3) 100%);
+  background-attachment:fixed;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+
+/* ── TOP BAR (à la "Welcome Sam" app header) ─────────────── */
+header{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:calc(18px + env(safe-area-inset-top,0px)) 20px 4px;
+  max-width:1080px;margin:0 auto;
+}
+.icon-btn{
+  width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:1rem;flex:none;
+  background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);color:#fff;
+  cursor:pointer;transition:.15s;text-decoration:none;font-family:inherit;
+}
+.icon-btn:hover{background:rgba(255,255,255,.28)}
+.icon-btn.spin{animation:spin .6s linear}
+@keyframes spin{to{transform:rotate(360deg)}}
+.brand-center{display:flex;flex-direction:column;align-items:center;text-align:center;gap:1px}
+.brand-center h1{
+  font-family:var(--font-head);font-size:.92rem;font-weight:800;color:#fff;
+  letter-spacing:1.2px;text-transform:uppercase;
+}
+.brand-center span{color:rgba(255,255,255,.78);font-size:.72rem;font-weight:500}
+.search-wrap{max-width:1080px;margin:10px auto 0;padding:0 20px}
+#search{
+  width:100%;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);color:#fff;
+  font-family:var(--font-body);font-size:.85rem;padding:11px 18px;border-radius:99px;
+  outline:none;transition:.2s;
+}
+#search::placeholder{color:rgba(255,255,255,.7)}
+#search:focus{background:rgba(255,255,255,.26)}
+
+/* ── PANEL ──────────────────────────── */
+.shell{max-width:1080px;margin:0 auto;padding:14px 14px 50px}
+.panel{
+  background:var(--panel);border-radius:26px;
+  box-shadow:0 30px 60px -25px rgba(10,20,60,.45);
+  overflow:hidden;
+}
+
+.tabbar{
+  display:flex;gap:6px;overflow-x:auto;padding:18px 18px 14px;
+  border-bottom:1px solid var(--border);
+}
+.tabbar::-webkit-scrollbar{display:none}
+.tabbar button{
+  flex:none;font-family:var(--font-head);font-weight:700;font-size:.82rem;
+  color:var(--muted);background:var(--surface);border:1px solid transparent;
+  padding:9px 16px;border-radius:99px;cursor:pointer;transition:.15s;white-space:nowrap;
+}
+.tabbar button:hover{color:var(--ink)}
+.tabbar button.active{
+  color:#fff;background:linear-gradient(135deg,var(--purple),var(--accent));
+  box-shadow:0 6px 16px -6px rgba(139,92,246,.55);
+}
+.tabbar .count{opacity:.75;font-weight:600;margin-left:5px}
+
+.content-wrap{padding:20px 22px 30px}
+.cat-banner{
+  width:100%;aspect-ratio:16/6;border-radius:18px;overflow:hidden;margin-bottom:14px;
+  background:linear-gradient(135deg,var(--surface2),var(--surface));
+}
+.cat-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.cat-title{font-family:var(--font-head);font-size:1.25rem;font-weight:800;margin-bottom:2px}
+.cat-sub{color:var(--muted);font-size:.84rem;margin-bottom:18px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px 12px}
+.card{
+  position:relative;background:var(--surface);border:1px solid var(--border);border-radius:20px;
+  padding:20px 16px 16px;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:8px;
+  transition:transform .16s ease,box-shadow .16s ease,background .16s ease;
+}
+.card:hover{
+  transform:translateY(-3px);background:#fff;
+  box-shadow:0 14px 30px -16px rgba(30,60,140,.35);
+}
+.card .badge{
+  position:absolute;top:-15px;left:16px;width:38px;height:38px;border-radius:50%;
+  display:grid;place-items:center;font-size:1.02rem;color:#fff;
+  background:linear-gradient(135deg,var(--purple),var(--purple2));
+  border:3px solid var(--panel);box-shadow:0 6px 14px -4px rgba(124,58,237,.55);
+}
+.card .title{font-family:var(--font-head);font-size:.92rem;font-weight:700;color:var(--ink);line-height:1.35;margin-top:4px}
+.card .snippet{color:var(--muted);font-size:.78rem}
+
+.state{color:var(--muted);font-size:.9rem;padding:36px 4px;max-width:460px}
+.state code{background:var(--surface2);padding:2px 7px;border-radius:6px;font-size:.85em;color:var(--accent)}
+.state.error{color:#d0455a}
+
+/* ── MODAL ──────────────────────────── */
+.modal-backdrop{
+  position:fixed;inset:0;background:rgba(10,14,30,.55);backdrop-filter:blur(3px);
+  display:none;align-items:flex-end;justify-content:center;z-index:100;
+  opacity:0;transition:opacity .18s ease;
+}
+.modal-backdrop.open{display:flex;opacity:1}
+.modal{
+  background:var(--panel);border-radius:24px 24px 0 0;
+  width:100%;max-width:680px;max-height:88vh;display:flex;flex-direction:column;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  transform:translateY(18px);opacity:0;transition:transform .2s ease,opacity .2s ease;
+}
+.modal-backdrop.open .modal{transform:translateY(0);opacity:1}
+@media(min-width:640px){
+  .modal-backdrop{align-items:center}
+  .modal{border-radius:24px;max-height:84vh}
+}
+.modal-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex:none;
+  padding:20px 22px;background:linear-gradient(135deg,var(--purple),var(--accent));
+  border-radius:24px 24px 0 0;
+}
+.modal-head h2{font-family:var(--font-head);font-size:1.02rem;font-weight:700;color:#fff;line-height:1.35}
+.modal-close{background:rgba(255,255,255,.2);border:none;color:#fff;font-size:1.05rem;
+  cursor:pointer;line-height:1;padding:6px 10px;border-radius:99px;flex:none}
+.modal-close:hover{background:rgba(255,255,255,.32)}
+.modal-scroll{overflow-y:auto;background:var(--surface)}
+
+/* fields */
+.fields{padding:18px 22px 4px;display:flex;flex-direction:column;gap:14px}
+.field.variant-field{
+  background:var(--surface2);border:1px dashed var(--purple);border-radius:14px;
+  padding:12px 12px 14px;margin-bottom:2px;
+}
+.field.variant-field label{color:var(--purple2)}
+.field label{display:block;font-family:var(--font-head);font-size:.78rem;font-weight:700;
+  color:var(--ink);margin-bottom:6px}
+.field .hint{color:var(--muted);font-weight:500;font-size:.72rem;margin-left:6px}
+.field input[type=text],.field textarea,.field select{
+  width:100%;background:#fff;border:1px solid var(--border);border-radius:10px;
+  padding:9px 12px;font-family:var(--font-body);font-size:.85rem;color:var(--ink);outline:none;
+}
+.field input[type=text]:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}
+.field textarea{resize:vertical;min-height:52px}
+.chipset{display:flex;flex-wrap:wrap;gap:7px}
+.chip{
+  font-family:var(--font-body);font-size:.78rem;font-weight:600;color:var(--muted);
+  background:#fff;border:1px solid var(--border);border-radius:99px;padding:7px 13px;
+  cursor:pointer;transition:.15s;
+}
+.chip:hover{border-color:var(--accent)}
+.chip.active{
+  color:#fff;background:linear-gradient(135deg,var(--accent2),var(--accent));border-color:transparent;
+}
+
+.preview-label{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 22px 6px;font-family:var(--font-head);font-size:.78rem;font-weight:700;color:var(--muted);
+}
+.preview-box{
+  margin:0 22px 20px;padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;
+  white-space:pre-wrap;font-size:.85rem;line-height:1.65;color:#2b3050;
+  font-family:var(--font-body);
+}
+
+.modal-foot{padding:14px 22px;border-top:1px solid var(--border);display:flex;gap:10px;flex:none}
+.btn{font-family:var(--font-head);font-weight:700;font-size:.82rem;border:2px solid transparent;
+  border-radius:999px;padding:12px 18px;cursor:pointer;transition:.15s}
+.btn.primary{background:linear-gradient(135deg,var(--purple),var(--accent));color:#fff;flex:1;
+  box-shadow:0 8px 18px -8px rgba(63,109,240,.55)}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn.primary.copied{background:var(--good)}
+.btn.ghost{background:transparent;border-color:var(--border);color:var(--muted)}
+.btn.ghost:hover{border-color:var(--purple);color:var(--purple)}
+
+footer{text-align:center;color:rgba(255,255,255,.75);font-size:.75rem;padding:22px 20px}
+footer a{color:#fff;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}
+
+@media(max-width:520px){
+  header{padding-left:16px;padding-right:16px}
+  .content-wrap{padding:18px 16px 26px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="icon-btn" href="https://github.com/siapagatau/AI-PROMPT" target="_blank" rel="noopener" title="Buka repo GitHub">🔗</a>
+  <div class="brand-center">
+    <h1>Miku Prompt</h1>
+    <span id="statLine">koleksi &amp; builder prompt</span>
+  </div>
+  <button class="icon-btn" id="refreshBtn" onclick="refreshData()" title="Muat ulang data">🔄</button>
+</header>
+<div class="search-wrap">
+  <input id="search" type="text" placeholder="Cari prompt…" oninput="renderGrid()">
+</div>
+
+<div class="shell">
+  <div class="panel">
+    <div class="tabbar" id="catNav"></div>
+    <div class="content-wrap">
+      <div id="catHeader"></div>
+      <div id="content"><div class="state">Memuat kategori…</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>Prompt &amp; opsi kustomisasinya disimpan sebagai file <code style="background:rgba(255,255,255,.15);color:#fff;padding:2px 7px;border-radius:6px">.txt</code> di <a href="https://github.com/siapagatau/AI-PROMPT/tree/master/prompts" target="_blank">/prompts</a> — upload file baru di GitHub, otomatis muncul di sini.</footer>
+
+<div class="modal-backdrop" id="backdrop" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="modalTitle"></h2>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-scroll">
+      <div class="fields" id="modalFields"></div>
+      <div class="preview-label"><span>Hasil prompt</span><span id="modalHint" style="font-weight:500"></span></div>
+      <div class="preview-box" id="modalOutput">Memuat…</div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn primary" id="copyBtn" onclick="copyModal()">📋 Salin Prompt</button>
+      <button class="btn ghost" onclick="closeModal()">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════════════
+// KONFIGURASI
+// ══════════════════════════════════════════════════════════
+const OWNER = 'siapagatau';
+const REPO  = 'AI-PROMPT';
+const ROOT  = 'prompts';
+const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+
+let categories   = [];
+let activeCat    = null;
+let activeGroups = [];   // grup gaya yang sedang tampil di grid (hasil filter pencarian)
+
+// state form yang sedang dibuka di modal
+let currentGroup      = null;  // { title, variants:[{label,file}] }
+let currentVariantIdx = 0;
+let tplBody   = '';
+let tplFields = [];
+let tplValues = {};
+
+// ══════════════════════════════════════════════════════════
+// PARSER FORMAT TEMPLATE
+// ------------------------------------------------------------
+// Sebuah file .txt boleh diawali blok field (opsional), diakhiri
+// baris berisi persis "---", lalu isi prompt di bawahnya.
+//
+//   subjek = text | Deskripsi subjek (opsional)
+//   palet  = select | Cerah ; Pastel ; Gelap
+//   elemen = multiselect | Bintang ; Asap ; Bokeh
+//   wm     = checkbox | Sertakan watermark kecil di pojok
+//   ---
+//   isi prompt ... {{subjek}} ... {{palet}} ... {{elemen}} ...
+//
+// Opsi untuk select/multiselect dipisah dengan titik koma ( ; ) —
+// bukan koma — supaya teks tiap opsi boleh mengandung koma sendiri.
+//
+// Placeholder juga boleh punya nilai default kalau kosong:
+//   {{subjek|Keep the subject's identity unchanged}}
+//
+// File tanpa blok field / tanpa "---" tetap valid — dianggap
+// prompt statis apa adanya (kompatibel dengan .txt lama).
+// ══════════════════════════════════════════════════════════
+function parseTemplate(raw){
+  const lines = raw.replace(/\r\n/g,'\n').split('\n');
+  const dividerIdx = lines.findIndex(l => l.trim() === '---');
+  if (dividerIdx === -1) return { fields: [], body: raw };
+
+  const fieldRe = /^(\w+)\s*=\s*(text|textarea|select|multiselect|checkbox)\s*\|\s*(.+)$/;
+  const fields = [];
+  lines.slice(0, dividerIdx).forEach(line => {
+    const m = line.trim().match(fieldRe);
+    if (m) fields.push({ key: m[1], type: m[2], meta: m[3].trim() });
+  });
+  const body = lines.slice(dividerIdx + 1).join('\n').replace(/^\n+/, '');
+  return { fields, body };
+}
+
+function humanLabel(key){
+  return key.replace(/_/g,' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function fillTemplate(body, fields, values){
+  return body.replace(/\{\{(\w+)(?:\|([^}]*))?\}\}/g, (_, key, def) => {
+    const f = fields.find(x => x.key === key);
+    const v = values[key];
+    if (f && f.type === 'checkbox') return v ? f.meta : '';
+    if (Array.isArray(v)) return v.length ? v.join(', ') : (def !== undefined ? def : '');
+    if (v === undefined || v === '') return def !== undefined ? def : '';
+    return v;
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// LABEL & EMOJI OTOMATIS UNTUK PILIHAN SELECT / MULTISELECT
+// ------------------------------------------------------------
+// Tiap opsi biasanya ditulis dua bagian dipisah " — " (mis.
+// "Foto Polaroid Inset — deskripsi teknis panjang..." ATAU
+// "spesifikasi teknis panjang... — label singkat"). Sisi mana
+// pun yang boleh jadi bagian panjangnya, kita ambil sisi yang
+// LEBIH PENDEK sebagai label chip supaya selalu ringkas & rapi,
+// sementara teks ASLI yang lengkap tetap dipakai sebagai nilai
+// yang disisipkan ke hasil prompt (tidak ada info yang hilang).
+// ══════════════════════════════════════════════════════════
+function splitShortLabel(opt){
+  const idx = opt.indexOf(' — ');
+  if (idx === -1){
+    return opt.length > 40 ? opt.slice(0, 38).trim() + '…' : opt;
+  }
+  const a = opt.slice(0, idx).trim();
+  const b = opt.slice(idx + 3).trim();
+  let label = a.length <= b.length ? a : b;
+  if (label.length > 40) label = label.slice(0, 38).trim() + '…';
+  return label;
+}
+
+const EMOJI_RULES = [
+  [/foto|photo|polaroid/i, '🖼️'],
+  [/musik|music|lagu|song|spotify/i, '🎵'],
+  [/chat|bubble|pesan|\bdm\b/i, '💬'],
+  [/notifikasi|notif|reminder|pengingat/i, '🔔'],
+  [/receipt|struk|nota/i, '🧾'],
+  [/warna|palet|color|colour/i, '🎨'],
+  [/lokasi|\bmap\b|peta|\bpin\b/i, '📍'],
+  [/stiker|sticker|maskot|plush/i, '🧸'],
+  [/sparkle|glitter|kilau|shine/i, '✨'],
+  [/bunga|flower|alam|nature|botanical/i, '🌸'],
+  [/frame|label|mood|\btag\b/i, '🏷️'],
+  [/vertical|portrait|story|9:16/i, '📱'],
+  [/square|1:1|persegi/i, '⬜'],
+  [/landscape|16:9|banner|\btv\b|wide|horizontal/i, '🖥️'],
+  [/print|cetak|\ba4\b|dpi/i, '🖨️'],
+  [/custom/i, '🛠️'],
+  [/icon|favicon|emote|compact/i, '🔘'],
+  [/watermark|profile/i, '🪪'],
+  [/malam|night|gelap|\bdark\b/i, '🌙'],
+  [/siang|\bday\b|terang|\blight\b|cerah/i, '☀️'],
+  [/vlog|wide-angle|wide angle/i, '🎥'],
+  [/potret|close/i, '🙂'],
+  [/lanskap|landscape statis|pemandangan/i, '🏞️'],
+  [/logo|lockup/i, '🔖'],
+  [/gabungan|combo|combine/i, '🧩'],
+];
+const EMOJI_FALLBACK = ['✨','🎯','🧩','🎈','⭐','🔹','🎨','📎','🌟','🔸'];
+
+function guessEmoji(label, idx){
+  for (const [re, em] of EMOJI_RULES){ if (re.test(label)) return em; }
+  return EMOJI_FALLBACK[idx % EMOJI_FALLBACK.length];
+}
+
+function parseOptions(meta){
+  return meta.split(';').map(s => s.trim()).filter(Boolean).map((full, i) => {
+    const label = splitShortLabel(full);
+    return { full, label, emoji: guessEmoji(label, i) };
+  });
+}
+
+// ══════════════════════════════════════════════════════════
+// AMBIL DATA DARI GITHUB
+// ══════════════════════════════════════════════════════════
+function titleFromFilename(name){ return name.replace(/\.txt$/i,'').replace(/_/g,' ').trim(); }
+function labelFromFolder(name){ return name.replace(/[-_]/g,' ').replace(/\b\w/g, c => c.toUpperCase()); }
+function firstEmoji(str){ const m = str.match(/\p{Extended_Pictographic}\uFE0F?/u); return m ? m[0] : '📝'; }
+function stripLeadingEmoji(str){
+  return str.replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u, '').trim() || str.trim();
+}
+
+// Setiap folder kategori boleh punya file "_info.txt" berisi:
+//   emoji = 🕌
+//   label = Poster Event
+//   deskripsi = Kalimat singkat tentang isi kategori ini
+// File ini tidak ikut muncul sebagai kartu prompt — hanya dipakai untuk
+// mempercantik tab & header kategori. Kalau tidak ada, label & emoji
+// dibuat otomatis dari nama foldernya seperti biasa.
+//
+// Setiap folder kategori juga boleh punya SATU file gambar bernama persis
+// "_thumbnail" (ekstensi .jpg / .jpeg / .png / .webp / .gif), mis.
+// prompts/vtuber-logo/_thumbnail.jpg — otomatis dipakai sebagai banner
+// gambar di header kategori. Tinggal upload file gambarnya ke folder itu
+// di GitHub, tidak perlu tulis URL apa pun. Kalau tidak ada, header
+// kategori tetap tampil normal tanpa banner.
+const THUMB_RE = /^_thumbnail\.(jpe?g|png|webp|gif)$/i;
+
+// ------------------------------------------------------------
+// GABUNGKAN VARIAN "Otomatis / + Referensi / Full Gabungan" dst
+// jadi SATU kartu per gaya visual, supaya grid tidak dobel-dobel.
+// Nama file dianggap berformat "<Nama Gaya> — <Jenis Prompt>.txt".
+// Kalau tidak ada " — " sama sekali, filenya jadi kartu sendiri
+// dengan satu varian saja (tanpa selector jenis prompt).
+// ------------------------------------------------------------
+const VARIANT_ORDER = ['otomatis', '+ referensi', '+ foto', 'full gabungan'];
+
+function splitVariant(rawTitle){
+  const idx = rawTitle.lastIndexOf(' — ');
+  const base = idx === -1 ? rawTitle : rawTitle.slice(0, idx).trim();
+  const variant = idx === -1 ? null : rawTitle.slice(idx + 3).trim();
+  return { base: stripLeadingEmoji(base), variant, emoji: firstEmoji(base) };
+}
+
+function buildGroups(files){
+  const map = new Map();
+  files.forEach(f => {
+    const { base, variant, emoji } = splitVariant(f.title);
+    if (!map.has(base)) map.set(base, { title: base, emoji, variants: [] });
+    map.get(base).variants.push({ label: variant || 'Default', file: f });
+  });
+  return Array.from(map.values()).map(g => {
+    g.variants.sort((a, b) => {
+      const ia = VARIANT_ORDER.indexOf(a.label.toLowerCase());
+      const ib = VARIANT_ORDER.indexOf(b.label.toLowerCase());
+      return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+    });
+    return g;
+  });
+}
+
+function parseInfoFile(raw){
+  const info = {};
+  raw.replace(/\r\n/g,'\n').split('\n').forEach(line => {
+    const m = line.match(/^\s*(emoji|label|deskripsi)\s*=\s*(.+)$/i);
+    if (m) info[m[1].toLowerCase()] = m[2].trim();
+  });
+  return info;
+}
+
+async function loadCategories(){
+  try{
+    const rootRes = await fetch(API + ROOT, { cache: 'no-store' });
+    if (rootRes.status === 404){ showEmptyRepo(); return; }
+    if (!rootRes.ok) throw new Error('status ' + rootRes.status);
+    const rootItems = await rootRes.json();
+
+    const folders = rootItems.filter(i => i.type === 'dir');
+    const looseFiles = rootItems.filter(i => i.type === 'file' && /\.txt$/i.test(i.name));
+
+    const results = await Promise.all(folders.map(async f => {
+      const res = await fetch(API + `${ROOT}/${f.name}`, { cache: 'no-store' });
+      const autoLabel = labelFromFolder(f.name);
+      if (!res.ok) return { key:f.name, label:autoLabel, emoji:'', deskripsi:'', thumb:'', files:[], groups:[] };
+      const items = await res.json();
+
+      const infoItem = items.find(i => i.type === 'file' && /^_info\.txt$/i.test(i.name));
+      let info = {};
+      if (infoItem){
+        try{
+          const infoRes = await fetch(infoItem.download_url + `?_=${Date.now()}`);
+          info = parseInfoFile(await infoRes.text());
+        }catch{ /* abaikan, pakai fallback otomatis */ }
+      }
+
+      const thumbItem = items.find(i => i.type === 'file' && THUMB_RE.test(i.name));
+
+      const files = items
+        .filter(i => i.type === 'file' && /\.txt$/i.test(i.name) && !/^_info\.txt$/i.test(i.name) && !THUMB_RE.test(i.name))
+        .map(i => ({ name:i.name, title:titleFromFilename(i.name), download_url:i.download_url }));
+
+      return {
+        key: f.name,
+        label: info.label || autoLabel,
+        emoji: info.emoji || '📁',
+        deskripsi: info.deskripsi || '',
+        thumb: thumbItem ? thumbItem.download_url : '',
+        files,
+        groups: buildGroups(files)
+      };
+    }));
+
+    categories = results.filter(c => c.files.length > 0);
+
+    if (looseFiles.length){
+      const files = looseFiles.map(i => ({ name:i.name, title:titleFromFilename(i.name), download_url:i.download_url }));
+      categories.push({
+        key:'__lainnya__', label:'Lainnya', emoji:'📎', deskripsi:'', thumb:'',
+        files, groups: buildGroups(files)
+      });
+    }
+
+    if (!categories.length){ showEmptyFolders(); return; }
+
+    const totalFiles = categories.reduce((n,c) => n + c.files.length, 0);
+    document.getElementById('statLine').textContent = `${totalFiles} prompt · ${categories.length} kategori`;
+
+    activeCat = categories[0].key;
+    renderNav();
+    renderGrid();
+  }catch(err){ showError(err); }
+}
+
+// ══════════════════════════════════════════════════════════
+// RENDER NAV & GRID
+// ══════════════════════════════════════════════════════════
+function renderNav(){
+  document.getElementById('catNav').innerHTML = categories.map(c => `
+    <button class="${c.key===activeCat?'active':''}" onclick="selectCat('${c.key}')" title="${escapeHtml(c.deskripsi||'')}">
+      ${c.emoji ? c.emoji+' ' : ''}${escapeHtml(c.label)}<span class="count">${c.files.length}</span>
+    </button>`).join('');
+}
+function selectCat(key){
+  activeCat = key; renderNav();
+  document.getElementById('search').value = '';
+  renderGrid();
+}
+
+async function refreshData(){
+  const btn = document.getElementById('refreshBtn');
+  btn.classList.add('spin');
+  btn.disabled = true;
+  document.getElementById('content').innerHTML = '<div class="state">Memuat ulang…</div>';
+  document.getElementById('catHeader').innerHTML = '';
+  document.getElementById('catNav').innerHTML = '';
+  categories = [];
+  activeCat = null;
+  await loadCategories();
+  btn.disabled = false;
+  setTimeout(() => btn.classList.remove('spin'), 600);
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderGrid(){
+  const cat = categories.find(c => c.key === activeCat);
+  const content = document.getElementById('content');
+  const header = document.getElementById('catHeader');
+  if (!cat){ content.innerHTML=''; header.innerHTML=''; return; }
+
+  const subtitle = cat.deskripsi
+    ? escapeHtml(cat.deskripsi)
+    : `${cat.groups.length} gaya tersedia — tiap gaya bisa punya opsi kustomisasi & jenis prompt sendiri`;
+  const banner = cat.thumb
+    ? `<div class="cat-banner"><img src="${cat.thumb}" alt="${escapeHtml(cat.label)}" loading="lazy"></div>`
+    : '';
+  header.innerHTML = `${banner}<div class="cat-title">${cat.emoji ? cat.emoji+' ' : ''}${escapeHtml(cat.label)}</div><div class="cat-sub">${subtitle}</div>`;
+
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const groups = q ? cat.groups.filter(g => g.title.toLowerCase().includes(q)) : cat.groups;
+  activeGroups = groups;
+
+  if (!groups.length){
+    content.innerHTML = `<div class="state">Tidak ada prompt yang cocok dengan pencarian.</div>`;
+    return;
+  }
+  content.innerHTML = `<div class="grid">${groups.map((g,i) => `
+    <button class="card" onclick="openModalByIndex(${i})">
+      <div class="badge">${g.emoji}</div>
+      <div class="title">${escapeHtml(g.title)}</div>
+      <div class="snippet">${g.variants.length > 1 ? `${g.variants.length} jenis prompt — ketuk untuk pilih` : 'Ketuk untuk atur opsi &amp; salin'}</div>
+    </button>`).join('')}</div>`;
+}
+
+// ══════════════════════════════════════════════════════════
+// MODAL — PILIH VARIAN + FORM KUSTOMISASI + LIVE PREVIEW
+// ══════════════════════════════════════════════════════════
+function openModalByIndex(i){ openModal(activeGroups[i]); }
+
+function variantEmoji(label){
+  const l = label.toLowerCase();
+  if (l.includes('otomatis')) return '⚙️';
+  if (l.includes('referensi')) return '🖼️';
+  if (l.includes('foto')) return '📸';
+  if (l.includes('gabungan')) return '🧩';
+  return '🔀';
+}
+
+function openModal(group){
+  currentGroup = group;
+  currentVariantIdx = group.variants.findIndex(v => v.label.toLowerCase().includes('otomatis'));
+  if (currentVariantIdx === -1) currentVariantIdx = 0;
+
+  document.getElementById('modalTitle').textContent = group.title;
+  document.getElementById('backdrop').classList.add('open');
+  loadVariant();
+}
+
+function selectVariant(i){
+  currentVariantIdx = i;
+  loadVariant();
+}
+
+async function loadVariant(){
+  const file = currentGroup.variants[currentVariantIdx].file;
+  document.getElementById('modalHint').textContent = '';
+  document.getElementById('modalOutput').textContent = 'Memuat…';
+  renderFields(); // tampilkan selector varian + kosongkan field lama dulu
+
+  try{
+    const res = await fetch(file.download_url + `?_=${Date.now()}`);
+    const raw = await res.text();
+    const parsed = parseTemplate(raw);
+    tplBody = parsed.body;
+    tplFields = parsed.fields.map(f => {
+      if (f.type === 'select' || f.type === 'multiselect') f.opts = parseOptions(f.meta);
+      return f;
+    });
+    tplValues = {};
+    tplFields.forEach(f => { tplValues[f.key] = f.type === 'multiselect' ? [] : (f.type === 'checkbox' ? false : ''); });
+
+    document.getElementById('modalHint').textContent = tplFields.length
+      ? `${tplFields.length} opsi kustomisasi`
+      : '';
+    renderFields();
+    updatePreview();
+  }catch{
+    document.getElementById('modalOutput').textContent = 'Gagal memuat isi prompt. Coba lagi.';
+  }
+}
+
+function renderFields(){
+  const wrap = document.getElementById('modalFields');
+
+  let variantHtml = '';
+  if (currentGroup && currentGroup.variants.length > 1){
+    variantHtml = `<div class="field variant-field">
+      <label>🔀 Jenis Prompt</label>
+      <div class="chipset">
+        ${currentGroup.variants.map((v,i) => `<button type="button" class="chip ${i===currentVariantIdx?'active':''}" onclick="selectVariant(${i})">${variantEmoji(v.label)} ${escapeHtml(v.label)}</button>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  if (!tplFields.length){ wrap.innerHTML = variantHtml; return; }
+
+  wrap.innerHTML = variantHtml + tplFields.map(f => {
+    const label = `<label>${humanLabel(f.key)}</label>`;
+    if (f.type === 'text'){
+      return `<div class="field">${label}<input type="text" placeholder="${f.meta.replace(/"/g,'&quot;')}" oninput="setValue('${f.key}', this.value)"></div>`;
+    }
+    if (f.type === 'textarea'){
+      return `<div class="field">${label}<textarea placeholder="${f.meta.replace(/"/g,'&quot;')}" oninput="setValue('${f.key}', this.value)"></textarea></div>`;
+    }
+    if (f.type === 'select'){
+      return `<div class="field">${label}<select onchange="setValueByIndex('${f.key}', this.value)">
+        <option value="">— Bebas, AI yang pilih —</option>
+        ${f.opts.map((o,i) => `<option value="${i}" title="${escapeHtml(o.full)}">${o.emoji} ${escapeHtml(o.label)}</option>`).join('')}
+      </select></div>`;
+    }
+    if (f.type === 'multiselect'){
+      return `<div class="field">${label}<div class="chipset">
+        ${f.opts.map((o,i) => `<button type="button" class="chip" title="${escapeHtml(o.full)}" onclick="toggleMulti('${f.key}',${i},this)">${o.emoji} ${escapeHtml(o.label)}</button>`).join('')}
+      </div></div>`;
+    }
+    if (f.type === 'checkbox'){
+      return `<div class="field"><div class="chipset">
+        <button type="button" class="chip" onclick="toggleCheckbox('${f.key}',this)">✅ ${escapeHtml(f.meta)}</button>
+      </div></div>`;
+    }
+    return '';
+  }).join('');
+}
+
+function setValue(key, val){ tplValues[key] = val; updatePreview(); }
+function setValueByIndex(key, idxStr){
+  const f = tplFields.find(x => x.key === key);
+  tplValues[key] = idxStr === '' ? '' : f.opts[Number(idxStr)].full;
+  updatePreview();
+}
+function toggleMulti(key, idx, btn){
+  const f = tplFields.find(x => x.key === key);
+  const full = f.opts[idx].full;
+  const arr = tplValues[key];
+  const i = arr.indexOf(full);
+  if (i > -1) arr.splice(i,1); else arr.push(full);
+  btn.classList.toggle('active');
+  updatePreview();
+}
+function toggleCheckbox(key, btn){
+  tplValues[key] = !tplValues[key];
+  btn.classList.toggle('active');
+  updatePreview();
+}
+function updatePreview(){
+  document.getElementById('modalOutput').textContent = fillTemplate(tplBody, tplFields, tplValues);
+}
+function closeModal(){ document.getElementById('backdrop').classList.remove('open'); }
+
+function copyModal(){
+  const text = document.getElementById('modalOutput').textContent;
+  const btn = document.getElementById('copyBtn');
+  const done = () => {
+    btn.textContent = '✅ Tersalin!'; btn.classList.add('copied');
+    setTimeout(()=>{ btn.textContent='📋 Salin Prompt'; btn.classList.remove('copied'); }, 1800);
+  };
+  if (navigator.clipboard?.writeText){
+    navigator.clipboard.writeText(text).then(done).catch(()=>fallbackCopy(text,done));
+  } else fallbackCopy(text,done);
+}
+function fallbackCopy(text, cb){
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.cssText='position:fixed;opacity:0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); cb(); }catch{}
+  document.body.removeChild(ta);
+}
+
+// ══════════════════════════════════════════════════════════
+// STATE KOSONG / ERROR
+// ══════════════════════════════════════════════════════════
+function showEmptyRepo(){
+  document.getElementById('content').innerHTML = `<div class="state">
+    Folder <code>/${ROOT}</code> belum ada di repo. Buat folder itu, lalu di dalamnya buat
+    subfolder per kategori (mis. <code>${ROOT}/poster</code>), dan isi dengan file <code>.txt</code>.
+  </div>`;
+}
+function showEmptyFolders(){
+  document.getElementById('content').innerHTML = `<div class="state">
+    Folder <code>/${ROOT}</code> sudah ada tapi belum ada kategori berisi file <code>.txt</code>.
+  </div>`;
+}
+function showError(err){
+  document.getElementById('content').innerHTML = `<div class="state error">
+    Gagal memuat data dari GitHub (${err.message}). Coba lagi beberapa saat lagi.
+  </div>`;
+}
+
+loadCategories();
+</script>
+</body>
+</html>

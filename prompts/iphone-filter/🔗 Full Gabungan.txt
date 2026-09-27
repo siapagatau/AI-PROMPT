@@ -1,0 +1,4 @@
+---
+Enhance this portrait for social media and TikTok content while strictly preserving the subject's exact identity, facial geometry, and natural expression. Do not alter face shape, bone structure, or who this person is. Apply only subtle skin cleanup — remove blemishes, even skin tone — without smoothing into AI plastic skin. Keep the original background completely identical: no replacements, no new elements, no layout changes, environment must match the reference shot exactly.
+
+Recreate this image as if captured on iPhone 16 Pro Max using Portrait Mode with 48mm equivalent lens, Photonic Engine computational photography, Cinematic bokeh depth simulation, ISO 50, 1/200s shutter, Apple ProRAW color science, Natural Light portrait lighting profile, and True Tone display-matched color rendering. This must read as authentic Apple computational photography — full-frame-like rendering with premium mobile clarity.

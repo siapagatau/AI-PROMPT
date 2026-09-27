@@ -1,0 +1,43 @@
+nama = text | Judul / nama VTuber, cth: Cyupi, Zavira, Ryujin
+deskripsi = textarea | Deskripsi karakter / tema
+tagline = text | Tagline / angka tambahan (opsional)
+kredit = text | Kredit / nama desainer (opsional)
+ukuran = select | square logo lockup (1500×1500px), transparent PNG background — profile / watermark utama ; wide horizontal lockup (2000×800px), transparent PNG background — untuk banner/overlay stream ; compact icon-friendly lockup (500×500px), transparent PNG background — favicon / emote kecil ; tall vertical lockup (1080×1920px), transparent PNG background — story / poster digital ; custom size — adjust canvas accordingly, transparent PNG background
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a VTuber / streamer name-logo (wordmark) in pixel / retro game logo style, with the following specifications:
+
+[TEXT & IDENTITY]
+• Main wordmark text: "{{nama|no fixed name provided — generate a short, fitting placeholder name styled the same way}}" — this exact text must be the single dominant, unmistakable focal element of the logo
+• Character / theme description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}} — let this guide the mascot details, mood, and any supporting motifs
+• Small secondary text/number: "{{tagline|not provided by the user, the AI may skip this detail entirely}}" — render in a compact pill/tag shape tucked near the bottom of the wordmark, clearly secondary to the main text
+• Credit text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a bottom corner, must not compete with the main wordmark
+• Canvas size / format: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[TYPOGRAPHY]
+• Letterform style: glossy bubble letters with a clean modern finish, accented by small pixel-art blocks or a pixelated shadow layer tucked behind the main wordmark
+• Keep every letter fully legible at a glance — no element should obscure the reading of the name
+• Maintain consistent letter spacing and a unified stroke weight across the whole wordmark
+
+[COLOR PALETTE]
+• a palette built around {{warna|a vibrant retro-game palette — a couple of saturated primary or neon tones against a light background}} — chosen deliberately by the user, then shaded and tinted to still fit a pixel / retro game logo
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+• Keep the palette cohesive across text fill, outline, shadow, and every decorative element
+• Use gradients or layered tonal shading rather than flat single-tone fills
+
+[DECORATIVE MOTIFS]
+• Incorporate: small 8-bit style icons (a heart, star, or controller button) scattered near the wordmark, a pixel checker-grid pattern in the background, and a subtle scanline or glow accent for a game-UI feel
+• Arrange decorations around and slightly behind the wordmark so the text always stays the clear focal point
+• Balance dense decorative areas with open negative space — avoid overcrowding
+
+[COMPOSITION]
+• Center the wordmark as the hero element, roughly filling 60–80% of the canvas width
+• Add a soft drop shadow or subtle glow beneath the letters for depth and separation from the background
+• Background must be transparent (or a simple soft vignette if a background is unavoidable) so the logo can be used as a sticker/overlay
+
+[MOOD & AESTHETIC]
+• Overall vibe: fun, nostalgic, energetic, and playfully digital
+• Finish: clean vector-illustration quality, glossy or matte per style, print- and stream-ready at any scale
+
+[OUTPUT]
+The final result must look like a professional VTuber/streamer logo lockup — instantly readable, charming, and cohesive in a single unified style.

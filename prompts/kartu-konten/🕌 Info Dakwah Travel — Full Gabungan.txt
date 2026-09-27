@@ -1,0 +1,43 @@
+judul = text | Judul / headline
+deskripsi = textarea | Deskripsi / teks pendukung
+info_tambahan = text | Sumber / tanggal / kategori (opsional)
+brand = text | Nama akun / brand / media (opsional)
+kredit_foto = text | Kredit foto / sumber gambar (opsional)
+statistik = text | Statistik / interaksi, cth: ❤️ 6.391 (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post Instagram/Facebook ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story ; 16:9 landscape (1920×1080px) — thumbnail, banner web ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference image, fully reconstruct and elevate it into a new content-card design styled as a religious / travel informational announcement card, similar to an organization's social media infographic post:
+
+[TEXT & CONTENT]
+• Headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — present as a shorter secondary text line beneath the headline
+• Additional info (source, date, or category): "{{info_tambahan|(none)}}" — present in a small, clearly readable secondary text block
+• Account / brand / media name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place as a small logo lockup or badge without competing with the headline
+• Footer details: photo credit / image source "{{kredit_foto|(none)}}", an engagement indicator "{{statistik|(none)}}" — arrange these small and unobtrusive at the bottom edge or corners, clearly legible but visually secondary to the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference image's layout grid, focal point placement, lighting setup, and text hierarchy
+• Identify its dominant color palette and typography style
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original headline, text, and branding with the new content specified above
+• Keep the same layout logic and proportions, simply re-populated with the new headline and information
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — sharper detail, better lighting, more realistic materials, a more premium finish
+• Recolor the composition toward a palette built around {{warna|a deep, rich background palette (navy, deep teal, or near-black) accented with warm gold or cream linework and ornamental detailing, with all headline text rendered in crisp white for maximum contrast}} — chosen deliberately by the user, then shaded and tinted so it still fits a religious / travel informational announcement card, similar to an organization's social media infographic post, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+• Motifs to preserve or introduce: a full-bleed thematic photographic background blended with an elegant gold ornamental pattern or decorative border along one edge, a smaller inset circular or rounded photo as a secondary visual accent, a bold oversized white headline placed directly over the photo with a subtle dark gradient scrim behind it for legibility, a small brand/organization logo watermark tucked in a corner, and a small account handle or credit line at the bottom edge
+
+[COMPOSITION & TYPOGRAPHY]
+• Preserve the reference's visual rhythm — spacing, alignment, and focal balance
+• Ensure the new headline remains the single dominant focal element, with any photo as clear secondary focus
+
+[MOOD & AESTHETIC]
+• Vibe: trustworthy, warm, reverent, informative — organizational-announcement energy
+• Finish: premium, polished, print-ready, social-media-optimized
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new headline and content, higher visual polish.

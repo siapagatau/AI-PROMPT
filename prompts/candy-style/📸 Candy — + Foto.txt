@@ -1,0 +1,37 @@
+nama = text | cth: Iochi Mari, Username, dll (opsional)
+deskripsi = text | cth: Fox girl, streamer, dsb (opsional)
+ukuran = select | 1:1 square (1080×1080px) — IG post, profile picture ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 16:9 landscape (1920×1080px) — YouTube thumbnail, banner ; 3:1 wide (3000×1000px) — Twitter / Discord banner ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, create an anime GFX graphic in "candy aesthetic" style:
+
+[TEXT & IDENTITY]
+• Main text / name: Display "{{nama|no fixed name provided — the AI may add a fitting name/title or leave it as a purely visual mark}}" prominently in large bubble font
+• Subject description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[REFERENCE ADAPTATION]
+• Extract the subject's color palette directly from the reference photo
+• Preserve the subject's identity, key visual features, and overall color harmony
+• Adapt all candy design elements to complement the reference's natural tones
+• The candy palette should feel like a natural extension of the photo's colors
+
+[CANDY DESIGN ELEMENTS]
+• Typography     : Bubble font / rounded bold text with thick white stroke outline
+• Borders/frames : Dashed-line rectangular frames matching the extracted palette
+• Background     : Layered warm-toned panels or torn-paper texture, colors derived from reference
+• UI accents     : Small decorative icons (camera, search, profile, star) scattered naturally
+• Text tags      : Floating short descriptive text snippets as visual accent details
+• Decorations    : Flowers, stars, ribbon bows — spread across foreground and background layers
+
+[LAYOUT COMPOSITION]
+• Main subject is the dominant focal element (60–70% of canvas)
+• Include 1–2 smaller inset panels as close-up or alternate angle detail shots
+• Dashed white lines connecting elements to create visual flow and rhythm
+
+[MOOD & AESTHETIC]
+• Vibe           : Warm, kawaii, playful — consistent with the reference's mood
+• Lighting       : Soft ambient warm light — no harsh shadows
+• Finish         : Polished, print-ready, social-media-optimized
+
+[OUTPUT]
+Final result must feel like the reference photo was naturally "translated" into candy aesthetic GFX style — cohesive, charming, and instantly recognizable.

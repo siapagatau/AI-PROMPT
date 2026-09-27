@@ -1,0 +1,40 @@
+judul = text | Judul utama poster, cth: Selamat Hari Raya Idul Fitri 1447 H
+deskripsi = textarea | Deskripsi / teks pendukung (opsional)
+info_tambahan = text | Tanggal / waktu / lokasi (opsional)
+brand = text | Nama brand / instansi / panitia (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post, thumbnail ; A4 portrait print-ready (2480×3508px, 300dpi) — poster cetak ; 16:9 landscape (1920×1080px) — banner web, layar TV/digital signage ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan, cth: biru navy dan emas rose gold (opsional — kosongkan untuk otomatis mengikuti tema)
+---
+Using the provided reference image, fully reconstruct and elevate it into a new professional event poster for a birthday celebration:
+
+[TEXT & CONTENT]
+• Main headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the event theme}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}"
+• Additional info (date, time, and/or location): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block
+• Organizer / brand name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place tastefully (e.g. small logo lockup area or footer credit) without competing with the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference image's layout grid, focal point placement, and text hierarchy
+• Identify its dominant color palette and typography style
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original text with the new content specified above
+• Keep the same layout logic and proportions, simply re-populated with the new information
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — sharper detail, better lighting, a more premium finish
+• Recolor the composition toward a palette built around {{warna|bright playful pastels or bold saturated party colors such as pink, yellow, sky blue and purple}} — chosen deliberately by the user, then shaded and tinted so it still fits a birthday celebration, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over generic theme color conventions — build all tints, shades, and complementary accents around it
+• Motifs to preserve or introduce: balloons, confetti, a birthday cake, string lights, gift boxes, star and sparkle accents
+
+[COMPOSITION & TYPOGRAPHY]
+• Preserve the reference's visual rhythm — spacing, alignment, and focal balance
+• Ensure the new headline remains the single dominant focal text
+
+[MOOD & AESTHETIC]
+• Vibe: joyful, festive, warm, and celebratory
+• Finish: premium, polished, print-ready, social-media-optimized
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new event, higher visual polish.

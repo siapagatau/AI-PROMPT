@@ -1,0 +1,42 @@
+kata_utama = text | Kata / frasa utama, cth: Ice Cream, Sky, Learn to Rest
+caption = textarea | Deskripsi / caption pendukung
+label_kecil = text | Catatan / label kecil di sekitar foto (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post Instagram/Facebook ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the first provided image as the base photo and the second provided image as the style reference, create a dreamy pastel aesthetic typography edit, similar to a soft VSCO/Instagram-story aesthetic photo diary applied onto the base photo:
+
+[TEXT & CONTENT]
+• Main word/phrase: render "{{kata_utama|no fixed main word provided — generate a short, fitting main word based on the description below}}" as the single most dominant typographic element, in bold bubble/display lettering
+• Supporting caption / description text: "{{caption|not provided by the user, the AI may skip this detail entirely}}" — present as a smaller secondary text element (handwritten-style caption, speech bubble, or small caption line depending on the style)
+• Small notes / labels: "{{label_kecil|not provided by the user, the AI may skip this detail entirely}}" — scatter these as tiny handwritten-style labels or arrow-pointer annotations near relevant details in the photo, kept small and clearly secondary
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[BASE PHOTO HANDLING]
+• Keep the base photo fully intact, unaltered, and clearly visible as the background
+• Do not borrow any subject matter, people, or objects from the style-reference image — only extract its design language from it
+
+[REFERENCE ADAPTATION]
+• Extract the lettering style, doodle/outline technique, color treatment, and layout logic directly from the style-reference image
+• Preserve the reference's composition logic — where the main word sits, how doodles wrap around the photo, where small captions/notes are placed
+• Adapt that extracted style to the new text content above and to the base photo's actual content; do not reuse the reference's own wording
+
+[COLOR PALETTE]
+• Primary palette derived from the reference image's coloring approach
+• However, override the reference's actual hues toward a palette built around {{warna|a soft cohesive pastel palette drawn from the photo's dominant tone (sky blue, soft blue-purple, or muted earth tones), with the main word rendered in a deeper matching tone plus a crisp white outline}} — chosen deliberately by the user, then blended so it still fits a dreamy pastel aesthetic typography edit, similar to a soft VSCO/Instagram-story aesthetic photo diary
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build the lettering, outline, and accent colors around it
+
+[TYPOGRAPHY & DOODLE MOTIFS]
+• Also consider incorporating: a large puffy, rounded bubble-lettering treatment for the main word, filled with a soft gradient or the photo itself masked inside the letters, thin white hand-drawn doodle accents (small clouds, hearts, stars, sparkles, a tiny cute animal silhouette) scattered loosely around the word, one small handwritten caption in a rounded speech-bubble shape, and delicate dotted or wavy white line accents tracing parts of the composition
+• Keep decorative details stylistically consistent with the reference's level of detail and placement logic
+
+[COMPOSITION]
+• Mirror the reference's typographic hierarchy, doodle density, and text placement logic, adapted to fit the base photo's actual framing
+• Maintain the same balance of photo-to-decoration space seen in the reference
+
+[MOOD & AESTHETIC]
+• Vibe: soft, dreamy, wistful, gentle diary-like intimacy, consistent with the reference's overall feel
+• Finish: clean, manual-edit quality, natural photo integration
+
+[OUTPUT]
+The final result should feel like a natural sibling design to the style reference — same design family, new photo and content, cohesive and publish-ready.

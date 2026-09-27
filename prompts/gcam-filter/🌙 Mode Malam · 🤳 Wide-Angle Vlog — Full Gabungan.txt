@@ -1,0 +1,21 @@
+watermark = text | Watermark kamera (nama device / username), cth: POCO X3 NFC · impostorgelap© (opsional)
+ukuran = select | 16:9 landscape video frame (1920×1080px) — gaya frame video vlog ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:3 classic photo (1440×1080px) — gaya foto kamera klasik ; 1:1 square (1080×1080px) — feed post ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, fully match its processing style and reconstruct the main uploaded photo as an elevated Google Camera (GCam) Night Sight computational photography look:
+
+[STEP 1 — STYLE EXTRACTION]
+• Analyze the reference's exact color grading, dynamic range, sharpness, and noise characteristics
+• Identify its sky tone, foliage saturation curve, and highlight/shadow balance precisely
+
+[STEP 2 — APPLICATION]
+• Apply that extracted processing style onto the main uploaded photo, preserving its actual subject and scene content completely unchanged
+Apply an authentic Google Camera Night Sight processing style: significantly brighten the low-light scene while keeping the sky a deep, rich navy-black rather than a washed-out gray, lift foliage, buildings, and foreground subjects to a clean, well-exposed brightness with fine detail preserved and minimal visible noise or grain, render warm ambient light sources (string lights, shopfronts, streetlamps, building lights) with a soft natural glow rather than blown-out highlights, keep colors true-to-life and never oversaturated, and preserve a subtle multi-frame-stacked smoothness and clarity that reads unmistakably as authentic Night Sight processing.
+
+[STEP 3 — SHOT PERSPECTIVE]
+Frame this with an ultra-wide, action-cam-style field of view, like a vlogging camera or wide front-facing phone lens: apply a subtle barrel/fisheye-style distortion toward the frame edges, exaggerate the size of anything reaching close to the lens (a hand, a helmet visor, an arm), let the environment sweep dramatically into the wide corners of the frame, and keep everything in the scene — near and far — in sharp deep focus with no artificial background blur.
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+[STEP 4 — WATERMARK]
+• Watermark overlay (optional, small and subtle, near the bottom of the frame, exactly like an authentic vlogging-camera-app overlay, clean white sans-serif with a soft drop shadow, never covering the main subject): {{watermark|no watermark needed — keep the frame completely clean with no on-screen text}}
+
+[OUTPUT]
+The final result should look like an upgraded, perfectly matched sibling shot to the reference — same authentic GCam processing DNA, new subject, professionally consistent quality.

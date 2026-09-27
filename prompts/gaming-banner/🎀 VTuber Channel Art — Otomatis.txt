@@ -1,0 +1,45 @@
+judul = text | Nama karakter / judul utama
+deskripsi = textarea | Deskripsi pose / tema visual
+role_badge = text | Role / badge kecil, cth: ASSASSIN (opsional)
+info_tambahan = text | Tagline / tanggal / prizepool (opsional)
+kredit = text | Kredit / sponsor / nama tim (opsional)
+ukuran = select | wide banner (1920×560px) — banner channel art, cover event ; 16:9 landscape (1920×1080px) — thumbnail, wallpaper, banner web ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 1:1 square (1080×1080px) — feed post, ikon profil ; A4 portrait print-ready (2480×3508px, 300dpi) — poster turnamen cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a professional gaming banner/thumbnail in VTuber / streamer channel-art banner, similar to a YouTube/Twitch channel header, with the following specifications:
+
+[TEXT & CONTENT]
+• Main character/title wordmark: "{{judul|no fixed name provided — generate a fitting short name/title based on the description}}" — this exact text must be the single dominant, unmistakable focal text element
+• Character pose / visual theme: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Small role/class badge text: "{{role_badge|not provided by the user, the AI may skip this detail entirely}}" — render in a compact tag/chip shape tucked in a corner, clearly secondary to the main wordmark
+• Additional info (tagline / date / prizepool): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block appropriate to the style
+• Credit / sponsor / team text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a corner or footer, must not compete with the main wordmark
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[TYPOGRAPHY]
+• a bold condensed two-tone flat-color display wordmark overlapping the character silhouette, with a small clean sans-serif subtitle or role tag beneath it
+• Keep the main wordmark fully legible at a glance — no element should obscure the reading of the name
+• Maintain strong contrast between every text layer and its background
+
+[COLOR PALETTE]
+• a palette built around {{warna|a vibrant two-tone duo (such as coral-and-navy, cyan-and-magenta, or icy-blue-and-white) built around the character's signature colors}} — chosen deliberately by the user, then shaded and tinted so it still fits a VTuber / streamer channel-art banner, similar to a YouTube/Twitch channel header
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+• Keep the palette cohesive across the character lighting, wordmark, and every decorative element
+• Use gradients or layered tonal shading rather than flat single-tone fills, unless the style specifically calls for flat color blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a dotted halftone or polka-pattern backdrop panel behind the wordmark, thin geometric line accents (circles, chevrons, cross marks) scattered around the composition, a small rounded platform-icon badge, and subtle sparkle accents near the character
+• Blend a dynamic, high-quality character render with clean supporting graphic/UI details
+• Add depth using rim-light, glow, motion blur, or atmospheric haze appropriate to the style
+
+[COMPOSITION]
+• Position the character to one side (often the right) breaking slightly out of the panel edge. Place the large flat-color wordmark overlapping the character's shoulder or hip area on the opposite side, tuck a small platform badge into a corner, and fill the remaining background with the dotted-pattern panel.
+• Establish a clear visual hierarchy: character → main wordmark → role/info tags → credit/sponsor
+• Balance negative space against detail-rich focal areas — avoid overcrowding
+
+[MOOD & AESTHETIC]
+• Overall vibe: energetic, friendly, parasocial charm, bright pop-idol energy
+• Finish: polished, high-resolution, game-studio key-art quality — not a generic stock render
+
+[OUTPUT]
+The final result must look like a professional, publish-ready gaming banner or thumbnail — cohesive, striking, and instantly communicative of the character/event.

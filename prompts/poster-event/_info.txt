@@ -1,0 +1,3 @@
+emoji = 🕌
+label = Poster Event
+deskripsi = Poster acara profesional untuk berbagai tema — religi, wedding, ulang tahun, promo, seminar, korporat, kuliner, hingga konser.

@@ -1,0 +1,39 @@
+kata_utama = text | Kata / frasa utama, cth: Ice Cream, Sky, Learn to Rest
+caption = textarea | Deskripsi / caption pendukung
+label_kecil = text | Catatan / label kecil di sekitar foto (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post Instagram/Facebook ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the first provided image as the base photo and the second provided image as a design reference, fully reconstruct and elevate its typography-edit style onto the base photo:
+
+[TEXT & CONTENT]
+• Main word/phrase: render "{{kata_utama|no fixed main word provided — generate a short, fitting main word based on the description below}}" as the single most dominant typographic element, in bold bubble/display lettering
+• Supporting caption / description text: "{{caption|not provided by the user, the AI may skip this detail entirely}}" — present as a smaller secondary text element (handwritten-style caption, speech bubble, or small caption line depending on the style)
+• Small notes / labels: "{{label_kecil|not provided by the user, the AI may skip this detail entirely}}" — scatter these as tiny handwritten-style labels or arrow-pointer annotations near relevant details in the photo, kept small and clearly secondary
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — STRUCTURE EXTRACTION]
+• Analyze the reference's lettering construction, doodle/outline style, color treatment, and layout rhythm
+• Identify its dominant color palette and overall composition proportions
+
+[STEP 2 — CONTENT REPLACEMENT]
+• Fully replace the reference's original text and photo subject with the base photo and the new content specified above
+• Keep the base photo fully intact and unaltered underneath the overlay
+• Keep the same construction logic and proportions, simply re-applied to the new photo and wording
+
+[STEP 3 — STYLE ENHANCEMENT]
+• Elevate the visual quality beyond the reference — cleaner linework, crisper lettering, more polished finish
+• Recolor the composition toward a palette built around {{warna|the natural colors of the photo itself, accented purely with crisp white doodle linework, plus one or two bright candy-color highlights (yellow, pink, or orange) used sparingly for small text labels}} — chosen deliberately by the user, then blended so it still fits a cute hand-drawn doodle typography edit, similar to a playful kawaii Instagram story/reels design, moving away from the reference's original hues
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build the lettering, outline, and accent colors around it
+• Motifs to preserve or introduce: thick white hand-drawn scribble/outline shapes framing the edges of the photo, small dashed white outline circles or blobs isolating focal subjects, tiny kawaii cartoon faces (simple dot eyes, small mouth, blush cheeks) doodled directly onto round food or objects in the photo, small hand-drawn arrows pointing at details with tiny handwritten labels, and the main word rendered as chunky bold bubble lettering with a thick white or colored outline sitting directly over the photo
+
+[COMPOSITION]
+• Preserve the reference's visual rhythm — spacing, decoration density, and focal balance, adapted to the base photo's actual framing
+• Ensure the main word remains the single dominant focal element, fully legible over the photo
+
+[MOOD & AESTHETIC]
+• Vibe: playful, cute, candid, casual social-media-diary energy
+• Finish: premium, polished, manual-edit quality, natural photo integration
+
+[OUTPUT]
+The final result should look like an upgraded, re-purposed version of the reference — same design DNA, new photo and content, higher visual polish.

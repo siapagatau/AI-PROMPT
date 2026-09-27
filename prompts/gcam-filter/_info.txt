@@ -1,0 +1,3 @@
+emoji = 📷
+label = GCam Filter
+deskripsi = Filter foto/video ala Google Camera — HDR+ mode siang & Night Sight mode malam, lengkap opsi watermark device/username.

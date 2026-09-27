@@ -1,0 +1,38 @@
+kata_utama = text | Kata / frasa utama, cth: Ice Cream, Sky, Learn to Rest
+caption = textarea | Deskripsi / caption pendukung
+label_kecil = text | Catatan / label kecil di sekitar foto (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post Instagram/Facebook ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided photo as the base image, add a dreamy pastel aesthetic typography edit, similar to a soft VSCO/Instagram-story aesthetic photo diary directly on top of it:
+
+[TEXT & CONTENT]
+• Main word/phrase: render "{{kata_utama|no fixed main word provided — generate a short, fitting main word based on the description below}}" as the single most dominant typographic element, in bold bubble/display lettering
+• Supporting caption / description text: "{{caption|not provided by the user, the AI may skip this detail entirely}}" — present as a smaller secondary text element (handwritten-style caption, speech bubble, or small caption line depending on the style)
+• Small notes / labels: "{{label_kecil|not provided by the user, the AI may skip this detail entirely}}" — scatter these as tiny handwritten-style labels or arrow-pointer annotations near relevant details in the photo, kept small and clearly secondary
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[BASE PHOTO HANDLING]
+• Keep the original photo fully intact, unaltered, and clearly visible as the background of the entire composition
+• All typography and doodle elements must be added on top as an overlay layer — never replace, crop out, or heavily obscure the original photo content
+
+[COLOR PALETTE]
+• a palette built around {{warna|a soft cohesive pastel palette drawn from the photo's dominant tone (sky blue, soft blue-purple, or muted earth tones), with the main word rendered in a deeper matching tone plus a crisp white outline}} — chosen deliberately by the user, then blended so it still fits a dreamy pastel aesthetic typography edit, similar to a soft VSCO/Instagram-story aesthetic photo diary
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build the lettering, outline, and accent colors around it
+• Keep every added element cohesive with (or intentionally complementary to) the photo's natural coloring
+
+[TYPOGRAPHY & DOODLE MOTIFS]
+• Incorporate: a large puffy, rounded bubble-lettering treatment for the main word, filled with a soft gradient or the photo itself masked inside the letters, thin white hand-drawn doodle accents (small clouds, hearts, stars, sparkles, a tiny cute animal silhouette) scattered loosely around the word, one small handwritten caption in a rounded speech-bubble shape, and delicate dotted or wavy white line accents tracing parts of the composition
+• Keep the main word fully legible at a glance — never let doodles or secondary text obscure it
+• Balance dense decorative areas with open negative space so the underlying photo still reads clearly
+
+[COMPOSITION]
+• Let the photo (or a vertically stacked multi-photo strip) fill the canvas. Place the oversized bubble-lettered main word centered as the clear focal point, with small doodle accents and one soft speech-bubble caption arranged loosely around it without crowding the word itself.
+• Establish a clear visual hierarchy: photo → main word → supporting caption → small notes/labels
+
+[MOOD & AESTHETIC]
+• Overall vibe: soft, dreamy, wistful, gentle diary-like intimacy
+• Finish: looks like a polished manual typography edit (the kind made in VSCO, PicsArt, or Phonto), not a heavy AI-generated illustration — crisp vector-style linework, clean lettering, natural photo integration
+
+[OUTPUT]
+The final result must look like an aesthetic, publish-ready Instagram story/post typography edit — cohesive, charming, and true to the dreamy pastel aesthetic typography edit, similar to a soft VSCO/Instagram-story aesthetic photo diary.

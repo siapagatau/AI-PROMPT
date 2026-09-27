@@ -1,0 +1,21 @@
+watermark = text | Watermark kamera (nama device / username), cth: POCO X3 NFC · impostorgelap© (opsional)
+ukuran = select | 16:9 landscape video frame (1920×1080px) — gaya frame video vlog ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:3 classic photo (1440×1080px) — gaya foto kamera klasik ; 1:1 square (1080×1080px) — feed post ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, fully match its processing style and reconstruct the main uploaded photo as an elevated Google Camera (GCam) daytime HDR+ computational photography look:
+
+[STEP 1 — STYLE EXTRACTION]
+• Analyze the reference's exact color grading, dynamic range, sharpness, and noise characteristics
+• Identify its sky tone, foliage saturation curve, and highlight/shadow balance precisely
+
+[STEP 2 — APPLICATION]
+• Apply that extracted processing style onto the main uploaded photo, preserving its actual subject and scene content completely unchanged
+Apply an authentic Google Camera HDR+ processing style: a very wide dynamic range that balances a bright sky against shadowed foreground detail without blown-out highlights or crushed shadows, a deeply saturated yet natural-looking azure blue sky with crisp, well-defined white clouds, lush richly saturated greens in foliage, grass, and trees, strong micro-contrast and fine-detail clarity (visible texture in leaves, gravel, brick, and fabric), a slightly cool-neutral white balance, and sharp edge definition with no visible over-sharpening halos — that unmistakable punchy "Pixel-style" HDR+ signature look.
+
+[STEP 3 — SHOT PERSPECTIVE]
+Frame this at a closer working distance with a moderately wide lens, keeping the subject's face and upper body as the clear focal point while still rendering the surrounding environment in sharp focus with no heavy background blur — a natural handheld vlog-style framing, not a studio portrait crop.
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+[STEP 4 — WATERMARK]
+• Watermark overlay (optional, small and subtle, near the bottom of the frame, exactly like an authentic vlogging-camera-app overlay, clean white sans-serif with a soft drop shadow, never covering the main subject): {{watermark|no watermark needed — keep the frame completely clean with no on-screen text}}
+
+[OUTPUT]
+The final result should look like an upgraded, perfectly matched sibling shot to the reference — same authentic GCam processing DNA, new subject, professionally consistent quality.

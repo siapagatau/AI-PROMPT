@@ -1,0 +1,3 @@
+emoji = 📱
+label = iPhone Filter
+deskripsi = Prompt untuk enhance & rekonstruksi foto pakai gaya komputasi iPhone 16 Pro Max — Portrait Mode, Photonic Engine, ProRAW color science.

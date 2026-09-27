@@ -1,0 +1,21 @@
+ukuran = select | 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:5 portrait (1080×1350px) — feed Instagram ; 1:1 square (1080×1080px) — feed post ; 16:9 landscape (1920×1080px) — thumbnail/wide ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, fully match its color-and-clarity processing and apply an elevated HD color boost to the main uploaded photo:
+
+[STEP 1 — STYLE EXTRACTION]
+• Analyze the reference's exact contrast curve, clarity/local-contrast strength, saturation and vibrance level, white balance, and black-point depth
+• Identify how it balances sharpness against noise and how it treats fine texture in skin, fabric, and surfaces
+
+[STEP 2 — APPLICATION]
+• Apply that extracted color-and-clarity style onto the main uploaded photo, preserving its actual subject and scene content completely unchanged
+Gently lift overall contrast and clarity: deepen true black points and brighten clean whites just slightly so the tonal range feels fuller, add a light touch of local contrast/texture enhancement (fine detail in fabric, skin, foliage, or surfaces becomes a little more defined without looking processed), nudge saturation and vibrance up only a small amount so colors read as richer but still completely natural, and apply very light, edge-aware sharpening. The result should look like a well-exposed, well-processed photo — crisp and clean, not obviously filtered.
+
+[STEP 3 — COLOR CHARACTER]
+Bright, social-feed-ready color character: push warm skin tones to look healthy and glowing, keep skies and greenery vivid and saturated, brighten highlights for a cheerful, energetic feel, and keep the overall palette punchy and eye-catching — optimized to stand out while scrolling a feed.
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[TECHNICAL RULES]
+• Color/tone grade only — do not upscale, do not synthesize new detail, do not alter the subject or composition
+
+[OUTPUT]
+The final result should look like an upgraded, perfectly color-matched sibling shot to the reference — same premium clarity and tonal punch, new subject, fully believable as a real photo.

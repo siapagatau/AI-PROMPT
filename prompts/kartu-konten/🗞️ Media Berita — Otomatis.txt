@@ -1,0 +1,47 @@
+judul = text | Judul / headline
+deskripsi = textarea | Deskripsi / teks pendukung
+info_tambahan = text | Sumber / tanggal / kategori (opsional)
+brand = text | Nama akun / brand / media (opsional)
+kredit_foto = text | Kredit foto / sumber gambar (opsional)
+statistik = text | Statistik / interaksi, cth: ❤️ 6.391 (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post Instagram/Facebook ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story ; 16:9 landscape (1920×1080px) — thumbnail, banner web ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a professional content-card design styled as a news-style media headline card, similar to a professional online news outlet's social media thumbnail, with the following specifications:
+
+[TEXT & CONTENT]
+• Headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — present as a shorter secondary text line beneath the headline
+• Additional info (source, date, or category): "{{info_tambahan|(none)}}" — present in a small, clearly readable secondary text block
+• Account / brand / media name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place as a small logo lockup or badge without competing with the headline
+• Footer details: photo credit / image source "{{kredit_foto|(none)}}", an engagement indicator "{{statistik|(none)}}" — arrange these small and unobtrusive at the bottom edge or corners, clearly legible but visually secondary to the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[COLOR PALETTE]
+• Base palette: a palette built around {{warna|a realistic, true-to-photo color palette drawn from the background photograph, paired with a clean white or off-white text panel and a confident dark navy or near-black headline color, with one small accent-color divider bar between headline and byline}} — chosen deliberately by the user, then shaded and tinted so it still fits a news-style media headline card, similar to a professional online news outlet's social media thumbnail
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+• Keep colors harmonious above all — text readability against the photo/background is the top priority
+• Prefer soft gradients or layered tonal panels over flat, single-tone blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a full-bleed dramatic press-style photograph filling the upper 55-65% of the canvas, a rounded-corner white/off-white text panel anchored to the bottom edge and slightly overlapping the photo, a small floating publication/brand logo badge tucked at the top edge of that panel, a thin colored divider line under the headline, a shorter secondary line of supporting text below the divider, and a subtle bottom-corner engagement icon (a heart/like icon with a number) plus a tiny photo-credit caption in the opposite corner
+• Render any photographic element with realistic, high-quality material and lighting — correct reflections, textures, and proportions
+• Add subtle depth using soft shadow, gentle gradient scrim, or layered panels so text always stays legible
+
+[TYPOGRAPHY]
+• Headline: bold, large display type — the unmistakable focal point after any photographic subject
+• Supporting text: clean, highly legible sans-serif matched to the style
+• Maintain strong contrast between every text layer and its background
+
+[COMPOSITION]
+• Place the dramatic photograph across the top of the canvas, then anchor a rounded white panel to the bottom edge that slightly overlaps the photo. Stack the bold headline, a thin colored divider, and a shorter secondary line inside that panel with generous padding. Keep the small logo badge and engagement icon visually secondary, tucked at the panel's edges.
+• Establish a clear visual hierarchy: photo/visual → headline → supporting text → footer/brand
+• Balance negative space against detail-rich focal areas — avoid overcrowding
+
+[MOOD & AESTHETIC]
+• Overall vibe: credible, editorial, high-stakes-news energy, clean and authoritative
+• Lighting: soft and directional where photographic, matching the style's atmosphere — avoid harsh flat lighting
+• Finish: polished, print-ready, and social-media-optimized
+
+[OUTPUT]
+The final result must look like a professional, publish-ready content card — cohesive, on-style, and instantly communicative of the headline's message.

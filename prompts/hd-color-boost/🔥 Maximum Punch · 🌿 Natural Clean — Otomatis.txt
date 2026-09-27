@@ -1,0 +1,18 @@
+ukuran = select | 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:5 portrait (1080×1350px) — feed Instagram ; 1:1 square (1080×1080px) — feed post ; 16:9 landscape (1920×1080px) — thumbnail/wide ; custom ratio — adjust canvas accordingly
+---
+Enhance this photo using pure color and tone manipulation only — no upscaling, no adding fake detail, no changing the actual resolution — so it reads as sharper and more "HD" purely through processing, with the following specifications:
+
+[COLOR & TONE PROCESSING]
+Push contrast, clarity, and dehaze aggressively so every texture and edge feels maximally defined, apply strong local-contrast (structure) enhancement so fine detail in skin, hair, fabric, and surfaces pops dramatically, boost saturation and vibrance to a bold, punchy level while keeping skin tones on any people believable, deepen black points and brighten whites for maximum tonal range, apply a soft, subtle vignette that gently darkens the corners to pull focus toward the center, and apply strong but clean edge-aware sharpening with no visible haloing. The result should be the most "premium camera app" version of this photo — hyper-crisp, richly colored, and eye-catching, right at the edge of natural before it starts looking artificial.
+
+[COLOR CHARACTER]
+True-to-life, natural color character: keep hues accurate and believable, use a gentle warm undertone in skin and light sources, keep whites clean rather than blue-tinted, and avoid any heavy color cast — the palette should feel honest and unfiltered even as clarity and contrast are enhanced.
+
+[TECHNICAL RULES]
+• Do not alter the subject's identity, proportions, pose, or the actual scene content — this is a color/tone grade only, not a scene edit
+• Do not add artificial detail, texture synthesis, or AI upscaling artifacts — every improvement must come from contrast, clarity, saturation, white balance, and sharpening adjustments applied to the existing pixels
+• Keep noise levels clean and controlled; avoid any halo artifacts around high-contrast edges from oversharpening
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[OUTPUT]
+The final result must look like the same original photo run through a excellent, high-end color grading and clarity pass — noticeably crisper, richer, and more "HD-looking" at a glance, while remaining fully believable as an unedited camera shot.

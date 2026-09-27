@@ -1,0 +1,41 @@
+nama = text | cth: Iochi Mari, Username, dll (opsional)
+deskripsi = text | cth: Fox girl, streamer, dsb (opsional)
+ukuran = select | 1:1 square (1080×1080px) — IG post, profile picture ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 16:9 landscape (1920×1080px) — YouTube thumbnail, banner ; 3:1 wide (3000×1000px) — Twitter / Discord banner ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, enhance the subject and transform the image into a full "candy aesthetic" anime GFX character card:
+
+[TEXT & IDENTITY]
+• Main text / name: Display "{{nama|no fixed name provided — the AI may add a fitting name/title or leave it as a purely visual mark}}" prominently in large bubble font
+• Subject description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[STEP 1 — SUBJECT ENHANCEMENT]
+• Preserve the subject's exact identity, facial geometry, and natural expression
+• Apply only subtle cleanup — smooth skin tone, remove blemishes — without AI plastic skin
+• Do not alter face shape, bone structure, or defining features
+
+[STEP 2 — COLOR EXTRACTION]
+• Extract the dominant color palette directly from the reference photo
+• Build the entire candy aesthetic around these extracted tones
+• The final palette should feel like a warm, pastel-enhanced version of the original photo's colors
+
+[STEP 3 — CANDY GFX CONSTRUCTION]
+• Typography     : Bubble font / rounded bold text with thick white stroke outline
+• Borders/frames : Dashed-line rectangular frames in the extracted dominant color
+• Background     : Layered warm-toned panels or torn-paper texture, derived from reference palette
+• UI accents     : Small decorative icons (camera, search, profile, star) scattered naturally
+• Text tags      : Floating short descriptive snippets as accent details
+• Decorations    : Flowers, stars, ribbon bows — spread across foreground and background
+
+[LAYOUT COMPOSITION]
+• Main subject is the dominant focal element (60–70% of canvas)
+• Include 1–2 smaller inset panels as detail or alternate angle shots
+• Dashed white lines connecting elements to create visual flow and rhythm
+
+[MOOD & AESTHETIC]
+• Vibe           : Warm, kawaii, playful — natural extension of the reference's mood
+• Lighting       : Soft ambient warm light — no harsh shadows
+• Finish         : Polished, print-ready, social-media-optimized
+
+[OUTPUT]
+Final result must look like a professional anime GFX character card where the reference photo was seamlessly transformed into candy aesthetic — charming, cohesive, and immediately recognizable.

@@ -1,0 +1,45 @@
+judul = text | Nama karakter / judul utama
+deskripsi = textarea | Deskripsi pose / tema visual
+role_badge = text | Role / badge kecil, cth: ASSASSIN (opsional)
+info_tambahan = text | Tagline / tanggal / prizepool (opsional)
+kredit = text | Kredit / sponsor / nama tim (opsional)
+ukuran = select | wide banner (1920×560px) — banner channel art, cover event ; 16:9 landscape (1920×1080px) — thumbnail, wallpaper, banner web ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 1:1 square (1080×1080px) — feed post, ikon profil ; A4 portrait print-ready (2480×3508px, 300dpi) — poster turnamen cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a professional gaming banner/thumbnail in retro pixel / arcade banner, blending pixel-art accents with modern lettering, with the following specifications:
+
+[TEXT & CONTENT]
+• Main character/title wordmark: "{{judul|no fixed name provided — generate a fitting short name/title based on the description}}" — this exact text must be the single dominant, unmistakable focal text element
+• Character pose / visual theme: {{deskripsi|not provided by the user, the AI may skip this detail entirely}}
+• Small role/class badge text: "{{role_badge|not provided by the user, the AI may skip this detail entirely}}" — render in a compact tag/chip shape tucked in a corner, clearly secondary to the main wordmark
+• Additional info (tagline / date / prizepool): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block appropriate to the style
+• Credit / sponsor / team text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a corner or footer, must not compete with the main wordmark
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[TYPOGRAPHY]
+• a chunky pixel-font or blocky beveled display lettering for the title, with a small pixel-style tag for the subtitle
+• Keep the main wordmark fully legible at a glance — no element should obscure the reading of the name
+• Maintain strong contrast between every text layer and its background
+
+[COLOR PALETTE]
+• a palette built around {{warna|a saturated retro-arcade palette (cyan, magenta, and yellow against a deep navy or black background) with CRT-glow accents}} — chosen deliberately by the user, then shaded and tinted so it still fits a retro pixel / arcade banner, blending pixel-art accents with modern lettering
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+• Keep the palette cohesive across the character lighting, wordmark, and every decorative element
+• Use gradients or layered tonal shading rather than flat single-tone fills, unless the style specifically calls for flat color blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a pixel-art border frame or corner ornaments, a subtle scanline/CRT-glow texture overlay, small 8-bit icon accents (stars, hearts, coins), and chunky drop-shadow blocks
+• Blend a dynamic, high-quality character render with clean supporting graphic/UI details
+• Add depth using rim-light, glow, motion blur, or atmospheric haze appropriate to the style
+
+[COMPOSITION]
+• Render the character in a semi-pixelated or cel-shaded style anchored to one side. Place a blocky pixel-bordered title banner across the top or bottom, scatter small 8-bit icon accents as scene-setting details, and overlay the whole composition subtly with scanline texture.
+• Establish a clear visual hierarchy: character → main wordmark → role/info tags → credit/sponsor
+• Balance negative space against detail-rich focal areas — avoid overcrowding
+
+[MOOD & AESTHETIC]
+• Overall vibe: nostalgic, playful, retro-gaming charm
+• Finish: polished, high-resolution, game-studio key-art quality — not a generic stock render
+
+[OUTPUT]
+The final result must look like a professional, publish-ready gaming banner or thumbnail — cohesive, striking, and instantly communicative of the character/event.

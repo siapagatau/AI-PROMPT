@@ -1,0 +1,44 @@
+judul = text | Judul utama poster, cth: Selamat Hari Raya Idul Fitri 1447 H
+deskripsi = textarea | Deskripsi / teks pendukung (opsional)
+info_tambahan = text | Tanggal / waktu / lokasi (opsional)
+brand = text | Nama brand / instansi / panitia (opsional)
+ukuran = select | 9:16 vertical (1080×1920px) — IG/WA Story, poster digital vertikal ; 4:5 portrait (1080×1350px) — IG feed portrait ; 1:1 square (1080×1080px) — feed post, thumbnail ; A4 portrait print-ready (2480×3508px, 300dpi) — poster cetak ; 16:9 landscape (1920×1080px) — banner web, layar TV/digital signage ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan, cth: biru navy dan emas rose gold (opsional — kosongkan untuk otomatis mengikuti tema)
+---
+Create a professional event poster design for a food & beverage / restaurant promotion, with the following specifications:
+
+[TEXT & CONTENT]
+• Main headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the event theme}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}"
+• Additional info (date, time, and/or location): "{{info_tambahan|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable secondary text block
+• Organizer / brand name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place tastefully (e.g. small logo lockup area or footer credit) without competing with the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[COLOR PALETTE]
+• Base palette: a palette built around {{warna|warm appetizing tones — terracotta, mustard yellow, deep red and cream}} — chosen deliberately by the user, then shaded and tinted so it still fits a food & beverage / restaurant promotion
+• This color preference was explicitly requested by the user and takes priority over generic theme color conventions — build all tints, shades, and complementary accents around it
+• Keep colors harmonious above all — text readability against the background is the top priority
+• Prefer soft gradients or layered tonal panels over flat, single-tone blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a high-quality hero food photograph, steam or texture details, rustic or modern frame elements, scattered ingredient accents
+• Blend a photographic-realistic focal element with clean supporting graphic/vector details
+• Add subtle depth using soft shadow, gentle glow, or atmospheric haze near the base of the main visual
+
+[TYPOGRAPHY]
+• Headline: bold, large display type — the unmistakable focal point of the composition
+• Supporting text: clean, highly legible sans-serif or an elegant script, matched to the theme
+• Maintain strong contrast between every text layer and its background
+
+[COMPOSITION]
+• Establish a clear visual hierarchy: headline → supporting text → additional info → brand/logo
+• Balance negative space against detail-rich focal areas — avoid overcrowding
+• Let the main subject occupy roughly 40–60% of the canvas, anchored bottom or to one side, leaving the rest open for text
+
+[MOOD & AESTHETIC]
+• Overall vibe: appetizing, warm, inviting, and craveable
+• Lighting: soft and natural, matching the theme's atmosphere — avoid harsh flat lighting
+• Finish: polished, print-ready, and social-media-optimized
+
+[OUTPUT]
+The final result must look like a professional, agency-quality event poster — cohesive, on-theme, and instantly communicative of the event's purpose.

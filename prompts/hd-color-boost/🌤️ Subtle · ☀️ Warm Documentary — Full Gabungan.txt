@@ -1,0 +1,21 @@
+ukuran = select | 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:5 portrait (1080×1350px) — feed Instagram ; 1:1 square (1080×1080px) — feed post ; 16:9 landscape (1920×1080px) — thumbnail/wide ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo, fully match its color-and-clarity processing and apply an elevated HD color boost to the main uploaded photo:
+
+[STEP 1 — STYLE EXTRACTION]
+• Analyze the reference's exact contrast curve, clarity/local-contrast strength, saturation and vibrance level, white balance, and black-point depth
+• Identify how it balances sharpness against noise and how it treats fine texture in skin, fabric, and surfaces
+
+[STEP 2 — APPLICATION]
+• Apply that extracted color-and-clarity style onto the main uploaded photo, preserving its actual subject and scene content completely unchanged
+Gently lift overall contrast and clarity: deepen true black points and brighten clean whites just slightly so the tonal range feels fuller, add a light touch of local contrast/texture enhancement (fine detail in fabric, skin, foliage, or surfaces becomes a little more defined without looking processed), nudge saturation and vibrance up only a small amount so colors read as richer but still completely natural, and apply very light, edge-aware sharpening. The result should look like a well-exposed, well-processed photo — crisp and clean, not obviously filtered.
+
+[STEP 3 — COLOR CHARACTER]
+Bright, clear, true-to-life color character with a warm, nostalgic "documented memory" feel: colors should look vivid and clean under natural daylight — blue skies stay rich but not oversaturated, greens stay lush and true, and skin tones lean gently warm and healthy without looking orange or artificial. Whites stay clean rather than blown out, and blacks/shadows stay soft and open rather than crushed, so the whole image feels comfortable and easy on the eyes even though it is bright and clear. Sharpness should be crisp and well-defined on edges and fine detail, but never harsh, gritty, or artificially over-processed; at the same time the overall feel should stay gently soft — smooth skin and light rendering, not clinical or glassy — so sharpness and softness sit in careful balance rather than fighting each other. Contrast should be confident but gentle, avoiding both a flat/hazy look and a harsh, oversaturated one. The end result should feel exactly like a genuine, well-lit candid photo of a warm, happy moment with friends — polished and clear enough to look "perfect," yet completely natural and unfiltered, like a cherished memory rather than a heavily edited photo.
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[TECHNICAL RULES]
+• Color/tone grade only — do not upscale, do not synthesize new detail, do not alter the subject or composition
+
+[OUTPUT]
+The final result should look like an upgraded, perfectly color-matched sibling shot to the reference — same premium clarity and tonal punch, new subject, fully believable as a real photo.

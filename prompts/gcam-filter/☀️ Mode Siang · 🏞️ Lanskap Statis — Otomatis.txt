@@ -1,0 +1,21 @@
+watermark = text | Watermark kamera (nama device / username), cth: POCO X3 NFC · impostorgelap© (opsional)
+ukuran = select | 16:9 landscape video frame (1920×1080px) — gaya frame video vlog ; 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:3 classic photo (1440×1080px) — gaya foto kamera klasik ; 1:1 square (1080×1080px) — feed post ; custom ratio — adjust canvas accordingly
+---
+Apply a Google Camera (GCam) daytime HDR+ computational photography look to this photo, with the following specifications:
+
+[COLOR GRADING & PROCESSING]
+Apply an authentic Google Camera HDR+ processing style: a very wide dynamic range that balances a bright sky against shadowed foreground detail without blown-out highlights or crushed shadows, a deeply saturated yet natural-looking azure blue sky with crisp, well-defined white clouds, lush richly saturated greens in foliage, grass, and trees, strong micro-contrast and fine-detail clarity (visible texture in leaves, gravel, brick, and fabric), a slightly cool-neutral white balance, and sharp edge definition with no visible over-sharpening halos — that unmistakable punchy "Pixel-style" HDR+ signature look.
+
+[SHOT PERSPECTIVE]
+Frame this with a standard wide field of view and no exaggerated fisheye distortion, a steady static composition, and deep focus maintained sharply across the entire scene from foreground to background, exactly like a handheld action-cam landscape or street shot.
+
+[TECHNICAL DETAIL]
+• Preserve the subject's exact identity, proportions, and the original scene content — this is a color/processing filter, not a scene replacement
+• Keep noise levels clean and controlled, matching real computational-photography output rather than an artificial "AI-generated" look
+• Maintain natural skin tones on any people in frame even as the environment colors are pushed vivid
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+[WATERMARK]
+• Watermark overlay (optional, small and subtle, near the bottom of the frame, exactly like an authentic vlogging-camera-app overlay, clean white sans-serif with a soft drop shadow, never covering the main subject): {{watermark|no watermark needed — keep the frame completely clean with no on-screen text}}
+
+[OUTPUT]
+The final result must be indistinguishable from an authentic photo shot on a GCam-modded Android phone — punchy, clean, and true to real mobile computational photography, ready to post as vlog or travel content.

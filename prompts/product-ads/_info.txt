@@ -1,0 +1,3 @@
+emoji = 🛍️
+label = Product Ads
+deskripsi = Iklan / desain produk profesional — studio minimalis, promo poster, tipografi bold, pastel imut, lifestyle natural, hingga editorial mewah.

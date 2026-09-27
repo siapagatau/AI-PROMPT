@@ -1,0 +1,22 @@
+ukuran = select | 9:16 vertical (1080×1920px) — TikTok, IG Story, Reels ; 4:5 portrait (1080×1350px) — feed Instagram ; 1:1 square (1080×1080px) — feed post ; 16:9 landscape (1920×1080px) — thumbnail/wide ; custom ratio — adjust canvas accordingly
+---
+Using the provided reference photo as the primary color-and-clarity style guide, apply a matching HD color boost to the main uploaded photo:
+
+[REFERENCE ADAPTATION]
+• Extract the reference's exact contrast curve, clarity/local-contrast level, saturation intensity, white balance, and black-point depth
+• Match how the reference handles fine texture, edge sharpness, and overall tonal punch as closely as possible
+• Apply that extracted color-and-clarity signature onto the main photo without altering its actual subject, composition, or content
+
+[COLOR & TONE PROCESSING]
+Gently lift overall contrast and clarity: deepen true black points and brighten clean whites just slightly so the tonal range feels fuller, add a light touch of local contrast/texture enhancement (fine detail in fabric, skin, foliage, or surfaces becomes a little more defined without looking processed), nudge saturation and vibrance up only a small amount so colors read as richer but still completely natural, and apply very light, edge-aware sharpening. The result should look like a well-exposed, well-processed photo — crisp and clean, not obviously filtered.
+• Where the reference and this base description differ, prioritize matching the reference image's actual look
+
+[COLOR CHARACTER]
+Bright, social-feed-ready color character: push warm skin tones to look healthy and glowing, keep skies and greenery vivid and saturated, brighten highlights for a cheerful, energetic feel, and keep the overall palette punchy and eye-catching — optimized to stand out while scrolling a feed.
+
+[TECHNICAL RULES]
+• This is a color/tone grade only — no upscaling, no fake detail generation, no changes to the subject or scene
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[OUTPUT]
+The final result should look like it came from the same color-processing pipeline as the reference — same clarity signature, same tonal punch, applied naturally to the new subject.

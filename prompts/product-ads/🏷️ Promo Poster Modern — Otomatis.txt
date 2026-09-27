@@ -1,0 +1,48 @@
+judul = text | Judul / nama produk, cth: Dadar Gulung Kelapa Gula Merah
+deskripsi = textarea | Deskripsi produk
+harga_promo = text | Harga / diskon / tagline (opsional)
+brand = text | Nama brand / toko (opsional)
+telp = text | Nomor telp / WhatsApp (opsional)
+sosmed = text | Media sosial, cth: @dapurummi.snack (opsional)
+info_perusahaan = text | Alamat / website (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post, toko online ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story, poster digital ; 16:9 landscape (1920×1080px) — banner web, digital signage ; A4 portrait print-ready (2480×3508px, 300dpi) — flyer cetak ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Create a professional product advertisement design styled as a modern promotional product poster with a confident price/discount callout, styled like a contemporary DTC brand ad rather than a generic marketplace flyer, with the following specifications:
+
+[TEXT & CONTENT]
+• Product name / headline: display "{{judul|no fixed product name provided — generate a fitting short product name based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Product description / supporting copy: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — reflect this in the visual details (ingredients, texture, form) and in a short supporting text line
+• Additional info (price, discount, or tagline): "{{harga_promo|not provided by the user, the AI may skip this detail entirely}}" — present in a clean, clearly readable badge or secondary text block
+• Brand / store name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place tastefully (e.g. small logo lockup area or footer credit) without competing with the headline
+• Contact / footer details: company info / address / website "{{info_perusahaan|(none)}}", phone / WhatsApp number "{{telp|(none)}}", social media handle "{{sosmed|(none)}}" — arrange these together in one small, neat footer line or corner block, clearly legible but visually secondary to the headline and product
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[COLOR PALETTE]
+• Base palette: a palette built around {{warna|one bold saturated brand color as a full-bleed background or color-blocked panel, paired with crisp white/off-white negative space and a single sharp accent color reserved only for the CTA button and discount badge — no busy multi-color gradients or clashing tones}} — chosen deliberately by the user, then shaded and tinted so it still fits a modern promotional product poster with a confident price/discount callout, styled like a contemporary DTC brand ad rather than a generic marketplace flyer
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+• Keep colors harmonious above all — text readability against the background is the top priority
+• Prefer soft gradients or layered tonal panels over flat, single-tone blocks
+
+[VISUAL MOTIFS & ELEMENTS]
+• Incorporate: a clean hero product photo shot at a slight dynamic angle (or a couple of variants arranged with intention), one minimal geometric badge — a simple circle or rounded rectangle, not a cartoonish starburst — for the price/discount, a confident sans-serif CTA button, a small refined logo mark, and understated footer contact info; no clip-art leaves, no decorative clutter, no filler placeholder copy
+• Render the product itself with photorealistic, appetizing/high-end material quality — correct reflections, textures, and proportions
+• Add subtle depth using soft shadow, gentle glow, or atmospheric haze around the product
+
+[TYPOGRAPHY]
+• Headline: bold, large display type — the unmistakable focal point after the product itself
+• Supporting text: clean, highly legible sans-serif (or a fitting script/display face for the mood), matched to the style
+• Maintain strong contrast between every text layer and its background
+
+[COMPOSITION]
+• Use a strong asymmetric grid rather than a stacked generic layout: a bold oversized headline anchored to one side, the hero product carrying equal visual weight on the other, the discount badge tucked tightly against the product instead of floating loosely, and the CTA plus contact info compressed into a slim, unobtrusive footer bar. Prioritize whitespace over decoration.
+• Establish a clear visual hierarchy: product → headline → supporting text → price/CTA → brand
+• Balance negative space against detail-rich focal areas — avoid overcrowding the product
+
+[MOOD & AESTHETIC]
+• Overall vibe: confident, premium-but-accessible, modern e-commerce, trustworthy
+• Lighting: soft and directional, matching the style's atmosphere — avoid harsh flat lighting
+• Finish: polished, print-ready, and social-media/e-commerce-optimized
+
+[OUTPUT]
+The final result must look like a professional, agency-quality product advertisement — cohesive, on-style, and instantly communicative of what the product is and why it's desirable.

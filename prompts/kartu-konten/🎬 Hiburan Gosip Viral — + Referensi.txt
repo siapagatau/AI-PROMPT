@@ -1,0 +1,44 @@
+judul = text | Judul / headline
+deskripsi = textarea | Deskripsi / teks pendukung
+info_tambahan = text | Sumber / tanggal / kategori (opsional)
+brand = text | Nama akun / brand / media (opsional)
+kredit_foto = text | Kredit foto / sumber gambar (opsional)
+statistik = text | Statistik / interaksi, cth: ❤️ 6.391 (opsional)
+ukuran = select | 1:1 square (1080×1080px) — feed post Instagram/Facebook ; 4:5 portrait (1080×1350px) — IG feed portrait ; 9:16 vertical (1080×1920px) — IG/WA Story ; 16:9 landscape (1920×1080px) — thumbnail, banner web ; custom ratio — adjust canvas accordingly
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference image as the primary style guide, create a content-card design styled as a pop-culture / entertainment gossip-style card, similar to a viral social-media entertainment page post:
+
+[TEXT & CONTENT]
+• Headline: display "{{judul|no fixed headline provided — generate a fitting short headline based on the description below}}" prominently as the single most dominant, eye-catching text element
+• Supporting description / body text: "{{deskripsi|not provided by the user, the AI may skip this detail entirely}}" — present as a shorter secondary text line beneath the headline
+• Additional info (source, date, or category): "{{info_tambahan|(none)}}" — present in a small, clearly readable secondary text block
+• Account / brand / media name: "{{brand|not provided by the user, the AI may skip this detail entirely}}" — place as a small logo lockup or badge without competing with the headline
+• Footer details: photo credit / image source "{{kredit_foto|(none)}}", an engagement indicator "{{statistik|(none)}}" — arrange these small and unobtrusive at the bottom edge or corners, clearly legible but visually secondary to the headline
+• Canvas size / aspect ratio: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[REFERENCE ADAPTATION]
+• Extract the layout structure, color palette, lighting style, and typography treatment directly from the reference image
+• Preserve the reference's overall composition logic — where the headline sits, where the photo/focal point is placed, how supporting text, badges, and footer details are arranged
+• Adapt that extracted style to the new headline and text content above; do not reuse the reference's own wording, photo subject, or branding
+• Keep a similarly styled photo treatment (crop, angle, framing) unless the new content clearly calls for something different
+
+[COLOR PALETTE]
+• Primary palette derived from the reference image's lighting and color styling
+• However, override the reference's actual hues toward a palette built around {{warna|a bold two-tone palette — one vivid saturated accent color reserved only for the small logo badge, paired with a clean white text block and a naturalistic photo section, with the headline rendered in confident pure black}} — chosen deliberately by the user, then shaded and tinted so it still fits a pop-culture / entertainment gossip-style card, similar to a viral social-media entertainment page post
+• This color preference was explicitly requested by the user and takes priority over generic style color conventions — build all tints, shades, and complementary accents around it
+
+[VISUAL MOTIFS]
+• Also consider incorporating: a striking portrait or candid photograph filling the upper half of the canvas, a small bright accent-color rectangular logo badge in a top corner, a small overlaid quote-card or chat-bubble-style screenshot box positioned near the subject to reference a quoted reaction or statement, a bold oversized black sans-serif headline filling the lower half on a clean white background, and a subtle directional arrow accent suggesting more content
+• Keep decorative details (badges, panels, dividers, icons) stylistically consistent with the reference
+
+[TYPOGRAPHY & COMPOSITION]
+• Mirror the reference's typographic hierarchy and text placement logic
+• Maintain the same balance of photo-to-text space seen in the reference
+
+[MOOD & AESTHETIC]
+• Vibe: punchy, viral, slightly cheeky, fast-scroll social-media energy, consistent with the reference's overall feel
+• Finish: polished, print-ready, social-media-optimized
+
+[OUTPUT]
+The final result should feel like a natural sibling design to the reference image — same design family, new headline and content — professional and cohesive.

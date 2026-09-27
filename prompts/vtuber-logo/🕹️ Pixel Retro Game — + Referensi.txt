@@ -1,0 +1,40 @@
+nama = text | Judul / nama VTuber, cth: Cyupi, Zavira, Ryujin
+deskripsi = textarea | Deskripsi karakter / tema
+tagline = text | Tagline / angka tambahan (opsional)
+kredit = text | Kredit / nama desainer (opsional)
+ukuran = select | square logo lockup (1500×1500px), transparent PNG background — profile / watermark utama ; wide horizontal lockup (2000×800px), transparent PNG background — untuk banner/overlay stream ; compact icon-friendly lockup (500×500px), transparent PNG background — favicon / emote kecil ; tall vertical lockup (1080×1920px), transparent PNG background — story / poster digital ; custom size — adjust canvas accordingly, transparent PNG background
+warna = text | Warna dominan (opsional — kosongkan untuk otomatis mengikuti gaya)
+---
+Using the provided reference logo image as the primary style guide, create a new VTuber / streamer name-logo:
+
+[TEXT & IDENTITY]
+• Main wordmark text: "{{nama|no fixed name provided — generate a short, fitting placeholder name styled the same way}}" — this exact text must be the single dominant, unmistakable focal element of the logo
+• Character / theme description: {{deskripsi|not provided by the user, the AI may skip this detail entirely}} — let this guide the mascot details, mood, and any supporting motifs
+• Small secondary text/number: "{{tagline|not provided by the user, the AI may skip this detail entirely}}" — render in a compact pill/tag shape tucked near the bottom of the wordmark, clearly secondary to the main text
+• Credit text: "{{kredit|not provided by the user, the AI may skip this detail entirely}}" — place small and unobtrusive in a bottom corner, must not compete with the main wordmark
+• Canvas size / format: {{ukuran|no fixed canvas size requested, use a sensible default aspect ratio for this platform}}
+
+[REFERENCE ADAPTATION]
+• Extract the letterform construction, outline treatment, shading style, and decorative motif language directly from the reference image
+• Preserve the reference's overall composition logic — how decorations wrap around the wordmark, where accents sit, how shadow/depth is built
+• Adapt that extracted style to the new text content above; do not reuse the reference's own wording or unrelated name
+
+[COLOR PALETTE]
+• Primary palette derived from the reference image's coloring and shading approach
+• However, override the reference's actual hues toward a palette built around {{warna|a vibrant retro-game palette — a couple of saturated primary or neon tones against a light background}} — chosen deliberately by the user, then shaded and tinted to still fit a pixel / retro game logo
+• This color preference was explicitly requested by the user and takes priority over the style's default colors — build every tint, shade, and accent around it
+
+[DECORATIVE MOTIFS]
+• Also consider incorporating: small 8-bit style icons (a heart, star, or controller button) scattered near the wordmark, a pixel checker-grid pattern in the background, and a subtle scanline or glow accent for a game-UI feel
+• Keep decorative details (icons, patterns, mascots, background accents) stylistically consistent with the reference's level of detail and placement logic
+
+[TYPOGRAPHY & COMPOSITION]
+• Mirror the reference's letterform thickness, corner rounding, and outline/stroke treatment
+• Maintain the same balance of text-to-decoration and the same general silhouette proportions seen in the reference
+
+[MOOD & AESTHETIC]
+• Vibe: fun, nostalgic, energetic, and playfully digital, consistent with the reference's overall feel
+• Background: transparent, so the logo works as a standalone sticker/overlay
+
+[OUTPUT]
+The final result should feel like a natural sibling design to the reference logo — same design family, new name and content, professional and cohesive.

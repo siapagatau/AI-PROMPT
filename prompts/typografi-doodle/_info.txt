@@ -1,0 +1,3 @@
+emoji = ✍️
+label = Typografi & Doodle
+deskripsi = Overlay typography estetik di atas foto sendiri — bubble text kawaii, doodle putih, quote tebal, hingga review tulisan tangan.

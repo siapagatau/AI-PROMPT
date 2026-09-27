@@ -1,0 +1,3 @@
+emoji = 🍊
+label = Candy Style
+deskripsi = Prompt GFX estetika candy-cute ala anime — warm pastel, bubble font, dashed frame, dan dekorasi manis lainnya.
